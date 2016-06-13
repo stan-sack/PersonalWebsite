@@ -1,0 +1,106 @@
+/* ============================================================
+SECTIONS
+============================================================ */
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  padding: 10em 0 30em;
+  background-position: 0 0;
+}
+section.module.parallax h1 {
+  color: white;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+section.module.parallax-1 {
+  background-image: url("../images/nightsky1.jpg");
+}
+section.module.parallax-2 {
+  background-image: url("../images/nightsky.jpg");
+  padding: 30em 0 30em;
+}
+section.module.parallax-3 {
+  background-image: url("../images/nightsky2.jpg");
+  padding: 30em 0 30em;
+}
+section.module.parallax-4 {
+  background-image: url("../images/nightsky3.jpg");
+  padding: 30em 0 30em;
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax {
+
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 80px;
+  }
+}
+
+.nav{
+  border:1px solid #ccc;
+  border-width:1px 0;
+  display:inline-block;
+
+}
+
+.nav li{
+  text-align:center;
+  float:left;
+  font-weight: bold;
+  transition: all 0.3s ease 0s;
+}
+
+.nav li:hover{
+  background: white;
+  font-weight: bold;
+}
+
+.nav a{
+  padding:0 30px;
+
+}
+
+.demo h3{
+  margin:0 0 2em 0;
+  padding:0;
+}
+
+figure {
+  width: 5em;
+  height: 5em;
+}
