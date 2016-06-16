@@ -1,299 +1,230 @@
 <!DOCTYPE html>
-
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
-  <!-- title and meta -->
-  <meta charset="utf-8">
-  <meta content="width=device-width,initial-scale=1.0" name="viewport">
-  <meta content="description" name="In this tutorial, we take a look at a more advanced parallax scrolling effect with a background image moving at a different speed to the content above it.">
-
-  <title>Advanced Parallax Scrolling Effect</title>
-  <link rel="stylesheet" href="devicon-master/devicon.css">
-  <!--  if you want colored versions -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Stan Tsouvallas</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/csshake-slow.css"/>
+  <link rel="stylesheet" href="css/imagehover.css"/>
+  <script type="text/javascript" src="js/pdfobject.js"></script>
   <script src="Chart.js/dist/Chart.bundle.js"></script>
-  <link rel="stylesheet" href="devicon-master/devicon-colors.css">
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
-  <!-- css -->
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
-  <link rel="stylesheet" href="css/base.css">
 
-  <link rel="stylesheet" href="css/imagehover.css">
-  <!-- js -->
-  <script src="js/modernizr.js"></script>
-  <script src="js/scripts.js"></script>
 
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-  canvas {
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-  }
-  </style>
 </head>
 
 <body>
+  <!-- loading page -->
+  <div class="se-pre-con"></div>
+  <!----- LINK BACK TO THE TUTORIAL--->
+
+  <!----- HEADER START--->
+  <header id="header">
+    <a href="au.linkedin.com/in/stantsouvallas"><i class="fa fa-linkedin-square fa-inverse fa-2x" aria-hidden="true" id="linkedin-icon"></i></a>
+    <a href="mailto:stan.tsouvallas@gmail.com"><i class="fa fa-envelope-square fa-inverse fa-2x" aria-hidden="true" id="email-icon"></i></a>
+    <a href="https://www.facebook.com/stan.tsouvallas"><i class="fa fa-facebook-square fa-inverse fa-2x" aria-hidden="true" id="facebook-icon"></i></a>
+    <a href="https://github.com/stan-sack"><i class="fa fa-github-square fa-inverse fa-2x" aria-hidden="true" id="github-icon"></i></a>
+  </header>
+  <!----- FOOTER START--->
+  <footer id="footer">
+    <a href="#top" style="color:red"><i class="fa fa-home fa-inverse fa-2x" aria-hidden="true" ></i></a>
+  </footer>
+  <!----- FOOTER END--->
+
+  <!----- SLIDES START --->
   <div id="top"></div>
-
-  <div class="wrapper">
-
-    <div class="info-bar">
-      <div class="container">
-        <a><i class="fa fa-linkedin-square fa-inverse fa-2x" aria-hidden="true"></i></a>
-        <a><i class="fa fa-facebook-square fa-inverse fa-2x" aria-hidden="true"></i></a>
-        <a><i class="fa fa-envelope-square fa-inverse fa-2x" aria-hidden="true"></i></a>
-        <a><i class="fa fa-github-square fa-inverse fa-2x" aria-hidden="true"></i></a>
+  <div id="slide1">
+    <div>
+      <h1>STAN TSOUVALLAS.</h1>
+      <h2>SOFTWARE ENGINEER</h2>
+      <div  style="text-align: center">
+        <ul class="menubar">
+          <li><a href="#slide2">About</a></li>
+          <li><a href="#slide4">Skills</a></li>
+          <li><a href="#slide6">Portfolio</a></li>
+          <li><a href="#slide8">Resume</a></li>
+        </ul>
       </div>
     </div>
+  </div>
 
-    <main>
-
-      <section class="module parallax parallax-1">
-        <div class="container">
-          <h1>Stan Tsouvallas.</h1>
-          <h2 style="color:white">Software Engineer</h2>
-          <div  style="text-align: center">
-            <ul class="nav">
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#resume">Resume</a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="module content" id="about">
-        <div class="container">
-          <h2>About Stan Tsouvallas</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veritatis, facere aliquid itaque tempore consequatur nihil sint enim aliquam id saepe magnam totam repellat placeat a fugit nulla molestias voluptas.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cum distinctio eum asperiores rem enim fugit eaque voluptas est laboriosam in repudiandae architecto placeat, illum atque quasi explicabo, culpa, molestias!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptas, aperiam quae provident, recusandae rem quis. Ut quaerat, quasi iste voluptate et dolorem atque sed neque voluptates, molestias dolor enim!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit tempore, quibusdam impedit deserunt. Natus quisquam, facilis numquam, molestias nesciunt modi, at debitis maxime sunt et quo quas labore perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde delectus laborum doloremque recusandae, debitis maxime a! Nihil distinctio ex, cumque tempore ea voluptas omnis odit, quaerat natus nam excepturi corporis!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius harum atque unde nihil aut quam provident sunt, iste error vitae suscipit dolores cupiditate totam, eum quae alias! Dicta, nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate beatae impedit officia quis odit rerum sequi, explicabo commodi illum suscipit, tempore eum doloremque quae obcaecati tempora quidem neque sapiente modi?</p>
-        </div>
-      </section>
-
-      <section class="module parallax parallax-2" id="shape">
-        <div class="container">
-          <h1>Skill Set</h1>
-        </div>
-      </section>
-
-      <section class="module content" id="skills">
-        <div class="container">
-          <h2>Skill Set</h2>
-
-          <div class="demo">
-
-            <figure class="imghvr-slide-up"><img src="devicon-master/icons/c/c-plain.png" alt="example-image">
-              <figcaption>
-                <h3>75%</h3>
-              </figcaption><a href="javascript:void(0);" onclick="add('C', 75);"></a>
-            </figure>
-
-            <figure class="imghvr-flip-vert"><img src="devicon-master/icons/java/java-original.png" alt="example-image">
-              <figcaption>
-                <h3>68%</h3>
-              </figcaption><a href="javascript:void(0);" onclick="add('Java', 68);"></a>
-            </figure>
-
-            <figure class="imghvr-zoom-out"><img src="devicon-master/icons/python/python-original.png" alt="example-image">
-              <figcaption>
-                <h3>90%</h3>
-              </figcaption><a href="javascript:void(0);" onclick="add('Python', 90);"></a>
-            </figure>
-
-            <figure class="imghvr-fold-down"><img src="devicon-master/icons/javascript/javascript-original.png" alt="example-image">
-              <figcaption>
-                <h3>60%</h3>
-              </figcaption><a href="javascript:void(0);" onclick="add('JavaScript', 60);"></a>
-            </figure>
-
-            <figure class="imghvr-shutter-in-horiz"><img src="devicon-master/icons/android/android-original.png" alt="example-image">
-              <figcaption>
-                <h3>73%</h3>
-
-              </figcaption><a href="javascript:void(0);" onclick="add('Android', 73);"></a>
-            </figure>
-
-            <figure class="imghvr-flip-diag-2"><img src="devicon-master/icons/postgresql/postgresql-original.png" alt="example-image">
-              <figcaption>
-                <h3>78%</h3>
-              </figcaption><a href="javascript:void(0);" onclick="add('Postgres', 78);"></a>
-            </figure>
-
-            <figure class="imghvr-hinge-right"><img src="devicon-master/icons/csharp/csharp-original.png" alt="example-image">
-              <figcaption>
-                <h3>65%</h3>
-              </figcaption><a href="javascript:void(0);" onclick="add('C#', 65);"></a>
-            </figure>
-
-            <figure class="imghvr-reveal-up"><img src="devicon-master/icons/amazonwebservices/amazonwebservices-original-wordmark.png" alt="example-image">
-              <figcaption>
-                <h3>70%</h3>
-              </figcaption><a href="javascript:void(0);" onclick="add('AWS', 70);"></a>
-            </figure>
-
-            <figure class="imghvr-zoom-out-up"><img src="devicon-master/icons/css3/css3-original.png" alt="example-image">
-              <figcaption>
-                <h3>40%</h3>
-              </figcaption><a href="javascript:void(0);" onclick="add('CSS', 40);"></a>
-            </figure>
-
-            <figure class="imghvr-fade"><img src="devicon-master/icons/git/git-original.png" alt="example-image">
-              <figcaption>
-                <h3>80%</h3>
-              </figcaption><a href="javascript:void(0);" onclick="add('Git', 80);"></a>
-            </figure>
-
-            <figure class="imghvr-slide-up"><img src="devicon-master/icons/html5/html5-original.png" alt="example-image">
-              <figcaption>
-                <h3>45%</h3>
-              </figcaption><a href="javascript:void(0);" onclick="add('HTML', 45);"></a>
-            </figure>
-
-            <figure class="imghvr-flip-vert"><img src="devicon-master/icons/linux/linux-original.png" alt="example-image">
-              <figcaption>
-                <h3>38%</h3>
-              </figcaption><a href="javascript:void(0);" onclick="add('Linux', 38);"></a>
-            </figure>
-
-            <figure class="imghvr-shutter-in-out-diag-2"><img src="devicon-master/icons/nodejs/nodejs-original-wordmark.png" alt="example-image">
-              <figcaption>
-                <h3>50%</h3>
-              </figcaption><a href="javascript:void(0);" onclick="add('Node.js', 50);"></a>
-            </figure>
-
-            <figure class="imghvr-fold-right"><img src="devicon-master/icons/php/php-plain.png" alt="example-image">
-              <figcaption>
-                <h3>60%</h3>
-              </figcaption><a href="javascript:void(0);" onclick="add('PHP', 60);"></a>
-            </figure>
-
-            <figure class="imghvr-blur"><img src="devicon-master/icons/react/react-original.png" alt="example-image">
-              <figcaption>
-                <h3>55%</h3>
-              </figcaption><a href="javascript:void(0);" onclick="add('React', 55);"></a>
-            </figure>
-
-          </div>
-
-
-
-
-        </div>
-        <div>
-          <canvas id="canvas"></canvas>
-        </div>
-      </section>
-
-      <section class="module parallax parallax-3">
-        <div class="container">
-          <h1>Potfolio</h1>
-        </div>
-      </section>
-
-      <section class="module content" id="portfolio">
-        <div class="container">
-          <h2>Portfolio</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veritatis, facere aliquid itaque tempore consequatur nihil sint enim aliquam id saepe magnam totam repellat placeat a fugit nulla molestias voluptas.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cum distinctio eum asperiores rem enim fugit eaque voluptas est laboriosam in repudiandae architecto placeat, illum atque quasi explicabo, culpa, molestias!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptas, aperiam quae provident, recusandae rem quis. Ut quaerat, quasi iste voluptate et dolorem atque sed neque voluptates, molestias dolor enim!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit tempore, quibusdam impedit deserunt. Natus quisquam, facilis numquam, molestias nesciunt modi, at debitis maxime sunt et quo quas labore perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde delectus laborum doloremque recusandae, debitis maxime a! Nihil distinctio ex, cumque tempore ea voluptas omnis odit, quaerat natus nam excepturi corporis!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius harum atque unde nihil aut quam provident sunt, iste error vitae suscipit dolores cupiditate totam, eum quae alias! Dicta, nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate beatae impedit officia quis odit rerum sequi, explicabo commodi illum suscipit, tempore eum doloremque quae obcaecati tempora quidem neque sapiente modi?</p>
-        </div>
-      </section>
-
-      <section class="module parallax parallax-4">
-        <div class="container">
-          <h1>Resume</h1>
-        </div>
-      </section>
-
-      <section class="module content" id="resume">
-        <div class="container" style="height: 100em">
-          <h2>Resume</h2>
-
-
-          <object data='pdf/resume.pdf'
-          type='application/pdf'
-          width='100%'
-          height='90%'>
-          <p>This browser does not support inline PDFs. Please download the PDF to view it: <a href="pdf/resume.pdf">Download PDF</a></p>
-        </object>
-      </div>
-    </section>
-
-
-
-
-
-  </main><!-- /main -->
-
-  <footer style="background: #1e1e1e">
-    <div class="container" >
-      <div class="asides clearfix">
-        <aside>
-          <nav>
-            <ul>
-              <li><a href="http://www.callmenick.com/">Welcome</a></li>
-              <li><a href="http://www.callmenick.com/category/tutorials">Tutorials</a></li>
-              <li><a href="http://www.callmenick.com/category/snippets">Snippets</a></li>
-              <li><a href="http://www.callmenick.com/category/articles">Articles</a></li>
-              <li><a href="http://www.callmenick.com/category/resources">Resources</a></li>
-            </ul>
-          </nav>
-        </aside>
-        <aside>
-          <nav>
-            <ul>
-              <li><a href="http://www.callmenick.com/archive/">Archive</a></li>
-              <li><a href="http://www.callmenick.com/about">About</a></li>
-              <li><a href="http://www.callmenick.com/contact">Contact</a></li>
-              <li><a href="http://www.callmenick.com/subscribe">Subscribe</a></li>
-            </ul>
-          </nav>
-        </aside>
-        <aside class="logo">
-          <a href="http://www.callmenick.com/"><img alt="Tutorials, Snippets, Resources, and Articles for Web Design and Web Development" onerror="this.src=logo-alt.png" src="img/core/logo-alt.svg"></a>
-        </aside>
-      </div>
-      <div class="copyright">
-        <small>
-          &copy; 2014, Nick Salloum<br><a href="http://callmenick.com">callmenick.com</a>
-        </small>
+  <div id="slide2">
+    <div class="content" >
+      <div class="quotes_container">
+        <h3 class="quotes">Stan began coding during his first year of mechanical
+          engineering and instantly began to submerse himself in the world of
+          computer science. Shifting to a strong focus on mechatronics was a
+          step in the right direction, but upon completion Stan continued his
+          studies independently and has since moved to Sydney to continue his
+          career in back end development. Eventually Stan will return to the
+          world of robotics for but now his main focus is writing elegant
+          snowflakes of code for the forces at be and pursuing the neverending
+          quest for eternal programming knowledge.
+        </h3>
       </div>
     </div>
-  </footer><!-- /footer -->
+  </div>
 
-</div><!-- /#wrapper -->
 
-<!-- js -->
-<script src="js/demo.js"></script>
+  <div id="slide3">
+    <div class="content">
+      <h1>Skill Set</h1>
+    </div>
+  </div>
 
-<!-- ads -->
-<script src="js/fusionad.js"></script>
 
-<!-- analytics -->
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-34160351-1']);
-_gaq.push(['_trackPageview']);
-(function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-</script>
+  <div id="slide4">
+    <div class="content">
+      <div class="demo">
+
+        <figure class="imghvr-slide-up"><img src="devicon-master/icons/c/c-plain.png" alt="example-image">
+          <figcaption>
+            <h3>75%</h3>
+          </figcaption><a href="javascript:void(0);" onclick="add('C', 75);"></a>
+        </figure>
+
+        <figure class="imghvr-flip-vert"><img src="devicon-master/icons/java/java-original.png" alt="example-image">
+          <figcaption>
+            <h3>68%</h3>
+          </figcaption><a href="javascript:void(0);" onclick="add('Java', 68);"></a>
+        </figure>
+
+        <figure class="imghvr-zoom-out"><img src="devicon-master/icons/python/python-original.png" alt="example-image">
+          <figcaption>
+            <h3>90%</h3>
+          </figcaption><a href="javascript:void(0);" onclick="add('Python', 90);"></a>
+        </figure>
+
+        <figure class="imghvr-fold-down"><img src="devicon-master/icons/javascript/javascript-original.png" alt="example-image">
+          <figcaption>
+            <h3>60%</h3>
+          </figcaption><a href="javascript:void(0);" onclick="add('JavaScript', 60);"></a>
+        </figure>
+
+        <figure class="imghvr-shutter-in-horiz"><img src="devicon-master/icons/android/android-original.png" alt="example-image">
+          <figcaption>
+            <h3>73%</h3>
+
+          </figcaption><a href="javascript:void(0);" onclick="add('Android', 73);"></a>
+        </figure>
+
+        <figure class="imghvr-flip-diag-2"><img src="devicon-master/icons/postgresql/postgresql-original.png" alt="example-image">
+          <figcaption>
+            <h3>78%</h3>
+          </figcaption><a href="javascript:void(0);" onclick="add('Postgres', 78);"></a>
+        </figure>
+
+        <figure class="imghvr-hinge-right"><img src="devicon-master/icons/csharp/csharp-original.png" alt="example-image">
+          <figcaption>
+            <h3>65%</h3>
+          </figcaption><a href="javascript:void(0);" onclick="add('C#', 65);"></a>
+        </figure>
+
+        <figure class="imghvr-reveal-up"><img src="devicon-master/icons/amazonwebservices/amazonwebservices-original-wordmark.png" alt="example-image">
+          <figcaption>
+            <h3>70%</h3>
+          </figcaption><a href="javascript:void(0);" onclick="add('AWS', 70);"></a>
+        </figure>
+
+        <figure class="imghvr-zoom-out-up"><img src="devicon-master/icons/css3/css3-original.png" alt="example-image">
+          <figcaption>
+            <h3>40%</h3>
+          </figcaption><a href="javascript:void(0);" onclick="add('CSS', 40);"></a>
+        </figure>
+
+        <figure class="imghvr-fade"><img src="devicon-master/icons/git/git-original.png" alt="example-image">
+          <figcaption>
+            <h3>80%</h3>
+          </figcaption><a href="javascript:void(0);" onclick="add('Git', 80);"></a>
+        </figure>
+
+        <figure class="imghvr-slide-up"><img src="devicon-master/icons/html5/html5-original.png" alt="example-image">
+          <figcaption>
+            <h3>45%</h3>
+          </figcaption><a href="javascript:void(0);" onclick="add('HTML', 45);"></a>
+        </figure>
+
+        <figure class="imghvr-flip-vert"><img src="devicon-master/icons/linux/linux-original.png" alt="example-image">
+          <figcaption>
+            <h3>38%</h3>
+          </figcaption><a href="javascript:void(0);" onclick="add('Linux', 38);"></a>
+        </figure>
+
+        <figure class="imghvr-shutter-in-out-diag-2"><img src="devicon-master/icons/nodejs/nodejs-original-wordmark.png" alt="example-image">
+          <figcaption>
+            <h3>50%</h3>
+          </figcaption><a href="javascript:void(0);" onclick="add('Node.js', 50);"></a>
+        </figure>
+
+        <figure class="imghvr-fold-right"><img src="devicon-master/icons/php/php-plain.png" alt="example-image">
+          <figcaption>
+            <h3>60%</h3>
+          </figcaption><a href="javascript:void(0);" onclick="add('PHP', 60);"></a>
+        </figure>
+
+        <figure class="imghvr-blur"><img src="devicon-master/icons/react/react-original.png" alt="example-image">
+          <figcaption>
+            <h3>55%</h3>
+          </figcaption><a href="javascript:void(0);" onclick="add('React', 55);"></a>
+        </figure>
+
+      </div>
+      <div>
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="slide5">
+    <div class="content">
+      <h1>Portfolio</h1>
+    </div>
+  </div>
+
+  <div id="slide6">
+    <div class="content">
+      <div class="quotes_container">
+        <h3 class="quotes">“Christmas doesn't come from a store, maybe Christmas perhaps means a little bit more....” </h3>
+        <img src="img/dr-seuss.png" align="left"/> <h4 class="author_name_gray">Dr. Seuss </h4>
+      </div>
+    </div>
+  </div>
+
+  <div id="slide7">
+    <div class="content">
+      <h1>Resume</h1>
+    </div>
+  </div>
+
+  <div id="slide8" >
+
+      <div class="quotes_container" style="height:82em">
+        <object data='pdf/resume.pdf'
+        type='application/pdf'
+        width='100%'
+        height='90%'>
+        <p>This browser does not support inline PDFs. Please download the PDF to view it: <a href="pdf/resume.pdf">Download PDF</a></p>
+      </object>
+
+  </div>
+
+  <div id="slide9">
+    <div class="content">
+      <div id="copyright"><a href="http://www.stantsouvallas.tk/">Copyright stantsouvallas.tk</a></div>
+    </div>
+  </div>
+</div>
+
+<!----- SLIDES END --->
 
 </body>
 </html>

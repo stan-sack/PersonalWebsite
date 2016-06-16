@@ -66,7 +66,7 @@ var config = {
     },
     title: {
       fontSize: 40,
-      display: true,
+      display: false,
       text: 'Employer Skills Radar'
     },
     scale: {
@@ -84,28 +84,41 @@ var config = {
   }
 };
 
-$(document).ready(function () {
-  $('a[href^="#"]').on('click', function (e) {
-    e.preventDefault();
+  <!----- JQUERY FOR SLIDING NAVIGATION --->
 
-    var target = this.hash,
-    $target = $(target);
 
-    $('html, body').stop().animate({
-      'scrollTop': $target.offset().top
-    }, 1800, 'swing', function () {
-      window.location.hash = target;
+
+  $(document).ready(function() {
+    $('a[href*=#]').each(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+      && location.hostname == this.hostname
+      && this.hash.replace(/#/,'') ) {
+        var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+        var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+        if ($target) {
+          var targetOffset = $target.offset().top;
+
+          <!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->
+          $(this).click(function() {
+            $("#menubar li a").removeClass("active");
+            $(this).addClass('active');
+            $('html, body').animate({scrollTop: targetOffset}, 1000);
+            return false;
+          });
+        }
+      }
     });
+
+    // load the chart
+    window.onload = function() {
+      var ctx = document.getElementById("chart-area");
+      window.myRadar = new Chart(document.getElementById("canvas"), config);
+    };
+
+    $(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+
+
   });
-
-
-
-
-  window.onload = function() {
-    var ctx = document.getElementById("chart-area");
-    window.myRadar = new Chart(document.getElementById("canvas"), config);
-  };
-
-
-
-});

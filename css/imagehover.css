@@ -19,8 +19,8 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+  /*-webkit-transform: translateZ(0);*/
+  /*transform: translateZ(0);*/
 }
 [class^='imghvr-'] > img,
 [class*=' imghvr-'] > img {
