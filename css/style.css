@@ -275,7 +275,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 }
 
 #slide7{
-	background: url(../img/slide5.jpg) 50% 0 no-repeat fixed;
+	background: url(../img/slide7.jpg) 50% 0 no-repeat fixed;
 	height: 18.75em;
 	margin: 0 auto;
 	padding: 250px 0 0 0;
@@ -320,5 +320,5 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url(images/loader-64x/Preloader_2.gif) center no-repeat #fff;
+	background: url(../img/loading-screen.gif) center no-repeat #fff;
 }
