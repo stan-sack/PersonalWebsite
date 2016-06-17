@@ -50,7 +50,7 @@ var config = {
   data: {
     labels: ["Initialise by choosing a skill"],
     datasets: [{
-      label: "Select your required skill set",
+      label: "How well do I meet your requirements?",
       backgroundColor: "rgba(64,64,64,0.3)",
       pointBackgroundColor: "rgba(64,64,64,1)",
       data: [100]
@@ -59,7 +59,8 @@ var config = {
   options: {
     legend: {
       labels: {
-        fontSize: 30
+        fontSize: 30,
+        fontFamily: 'Montserrat'
       },
       position: 'top',
       display: 'false'
@@ -72,7 +73,8 @@ var config = {
     scale: {
       reverse: false,
       pointLabels: {
-        fontSize: 20
+        fontSize: 20,
+        fontFamily: 'Montserrat'
       },
       gridLines: {
         color: ['#808080', '#FF007F', '#7F00FF', '#0000FF', '#0080FF', '#00FF80', '#00FF00', '#80FF00', '#FFFF00', '#FF8000', '#FF0000']
