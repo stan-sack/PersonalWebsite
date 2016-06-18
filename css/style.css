@@ -107,7 +107,7 @@ a.rpanel:hover{ color: #fff; }
 	text-align: center;
 	position: fixed;
 	color: white;
-	z-index: 2;
+	z-index: 5;
 }
 
 #footer{
@@ -117,7 +117,7 @@ a.rpanel:hover{ color: #fff; }
 	bottom:0px;
 	text-align: center;
 	color: white;
-	z-index: 2;
+	z-index: 5;
 }
 
 .link-icon {
@@ -146,8 +146,8 @@ a.rpanel:hover{ color: #fff; }
 .menubar a{
 	padding:0 30px;
 	text-decoration-style: none;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 12px;
+	padding-bottom: 13px;
 }
 
 .menubar li a { color: #0066cc; opacity:1; font-size: 16px; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: bold;transition: all 0.3s ease 0s;}
@@ -237,7 +237,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 #slide2{
 	background-color: #fff;
 	color: #333333;
-	height: 30em;
+	height: 37em;
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 50px 0 50px 0;
@@ -247,7 +247,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	background: url(../img/slide3.jpg) 50% 0 no-repeat fixed;
 	color: #fff;
 	height: 18.75em;
-	padding: 200px 0 0 0;
+	padding: 135px 0 0 0;
 	background-size: cover;
 }
 
@@ -255,14 +255,14 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	background-color: #fff;
 	color: #333333;
 	/*height: 18.75em;*/
-	padding: 200px 0 0 0;
+	padding: 100px 0 0 0;
 }
 
 #slide5{
 	background: url(../img/slide5.jpg) 50% 0 no-repeat fixed;
 	height: 18.75em;
 	margin: 0 auto;
-	padding: 200px 0 0 0;
+	padding: 135px 0 0 0;
 	color: #fff;
 	background-size: cover;
 }
@@ -270,15 +270,15 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 #slide6{
 	background-color: #fff;
 	color: #333333;
-	height: 18.75em;
-	padding: 200px 0;
+	height: 50em;
+	padding: 100px 0 0 0;
 }
 
 #slide7{
 	background: url(../img/slide7.jpg) 50% 0 no-repeat fixed;
 	height: 18.75em;
 	margin: 0 auto;
-	padding: 200px 0 0 0;
+	padding: 135px 0 0 0;
 	color: #fff;
 	background-size: cover;
 }
@@ -286,12 +286,12 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 #slide8{
 	background-color: #fff;
 	color: #333333;
-	height: 80em;
-	padding: 200px 0;
+	height: 79em;
+	padding: 100px 0;
 }
 
 #slide9{
-	/*background: url(../img/slide5.jpg) 50% 0 no-repeat fixed;*/
+	background: 50% 0 no-repeat fixed;
 	background-color: black;
 	height: 5.75em;
 	margin: 0 auto;

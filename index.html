@@ -2,19 +2,33 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <meta name="description" content="The personal website of software engineer Stan Tsouvallas">
+  <meta name="keywords" content="HTML,CSS,XML,Javascript,Stan,Tsouvallas,Adelaide,Sydney,Australia,Web,Development,Design,Software,Engineer,Programmer,Code">
+  <meta name="author" content="Stan Tsouvallas">
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <title>Stan Tsouvallas</title>
+  <!-- materialise -->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="css/imagehover.css"/>
   <script type="text/javascript" src="js/pdfobject.js"></script>
   <script src="Chart.js/dist/Chart.bundle.js"></script>
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
+  <!-- materialise -->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+
+  <!-- materialise stuff -->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
 
 
@@ -58,12 +72,13 @@
   <div id="slide2">
     <div class="content" >
       <div class="quotes_container">
-        <h3 class="quotes">Stan began coding during his first year of mechanical
-          engineering and instantly became fascinated with the world of computer science.
+        <h3 class="quotes"  style="text-align: justify">
+          Stan began coding during his first year of mechanical engineering and
+          instantly became fascinated with the world of computer science.
           He shifted his degree towards mechatronics, and on completion with first class honours
           became free to pledge his full focus toward software development.
           With Stan able to continue his independent development unhindered he
-          soon was drawn from Adelaide to city to begin his long and inspiring career.
+          soon was drawn from Adelaide to Sydney to begin his long and inspiring career.
           One day Stan will return to the world of robotics and automation but for
           now his main focus is writing elegant snowflakes of code for the powers
           at be and pursuing the neverending quest for eternal programming knowledge.
@@ -228,8 +243,8 @@
         <canvas id="canvas"></canvas>
       </div>
       <div  style="text-align: center">
-      <div ><a href="javascript:void(0);" onclick="clearData();" id="clear-button">Clear</a></div>
-    </div>
+        <div ><a href="javascript:void(0);" onclick="clearData();" id="clear-button">Clear</a></div>
+      </div>
     </div>
   </div>
 
@@ -243,39 +258,129 @@
   <div id="slide6">
     <div class="content">
       <div class="quotes_container">
-        <h3 class="quotes">“Christmas doesn't come from a store, maybe Christmas perhaps means a little bit more....” </h3>
-        <img src="img/dr-seuss.png" align="left"/> <h4 class="author_name_gray">Dr. Seuss </h4>
-      </div>
-    </div>
-  </div>
 
-  <div id="slide7">
-    <div class="content">
-      <h1>Resume</h1>
-    </div>
-  </div>
+        <div class="card small" style="width:30%; float:left; margin-left:1.5%; margin-right:1.5%">
+          <div class="card-image waves-effect waves-block waves-light small">
+            <img class="activator" src="img/itutorparents.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">iTutor Parents<i class="material-icons right">more_vert</i></span>
+            <p><a href="https://parents.itutorworld.com.au">parents.itutorworld.com.au</a></p>
+          </div>
+          <div class="card-reveal" style="box-sizing: border-box">
+            <span class="card-title grey-text text-darken-4">iTutor Parents<i class="material-icons right">close</i></span>
+            <p>Contributed to API and built front end components using React.
+              Engineered and implemented automatic reporting system for parents.</p>
+            </div>
+          </div>
 
-  <div id="slide8" >
+          <div class="card small" style="width:30%; float:left; margin-left:1.5%; margin-right:1.5%;">
+            <div class="card-image waves-effect waves-block waves-light small">
+              <img class="activator" src="img/pulaapply.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Pula Apply<i class="material-icons right">more_vert</i></span>
+              <p><a href="http://apply.pulacapital.com.au/">apply.pulacapital.com.au</a></p>
+            </div>
+            <div class="card-reveal" style="box-sizing: border-box">
+              <span class="card-title grey-text text-darken-4">Pula Apply<i class="material-icons right">close</i></span>
+              <p>Built major components of API including integration with PostgreSQL, AWS SES and Latex.
+                Made alterations to Gravity Forms integration.</p>
+              </div>
+            </div>
 
-      <div class="quotes_container" style="height:82em">
-        <!-- <object data='pdf/resume.pdf'
-        type='application/pdf'
-        width='100%'
-        height='90%'> -->
-        <img src="img/resume.jpg" alt="example-image" style="width:100%">
-        <!-- <p>This browser does not support inline PDFs. Please download the PDF to view it: <a href="pdf/resume.pdf">Download PDF</a></p> -->
-      <!-- </object> -->
+            <div class="card small" style="width:30%; float:left; margin-left:1.5%; margin-right:1.5%;">
+              <div class="card-image waves-effect waves-block waves-light small">
+                <img class="activator" src="img/itutorapply.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">iTutor Apply<i class="material-icons right">more_vert</i></span>
+                <p><a href="http://apply.itutorworld.com.au/">apply.itutorworld.com.au</a></p>
+              </div>
+              <div class="card-reveal" style="box-sizing: border-box">
+                <span class="card-title grey-text text-darken-4">iTutor Apply<i class="material-icons right">close</i></span>
+                <p>Built major components of API including integration with PostgreSQL, AWS SES and Latex.
+                  Made minor contributions to front end.</p>
+                </div>
+              </div>
 
-  </div>
+              <div class="card small" style="width:30%; float:left; margin-left:1.5%; margin-right:1.5%;">
+                <div class="card-image waves-effect waves-block waves-light small">
+                  <img class="activator" src="img/ausrt.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">AUSRT<i class="material-icons right">more_vert</i></span>
+                  <p><a href="http://www.ausrt.com">ausrt.com</a></p>
+                </div>
+                <div class="card-reveal" style="box-sizing: border-box">
+                  <span class="card-title grey-text text-darken-4">AUSRT<i class="material-icons right">close</i></span>
+                  <p>Worked on the site as part of honours thesis. Mostly involved front end HTML and WordPress.</p>
+                </div>
+              </div>
 
-  <div id="slide9">
-    <div class="content">
-      <div id="copyright"><a href="http://www.stantsouvallas.tk/">Copyright Stan Tsouvallas 2016</a></div>
-    </div>
-  </div>
-</div>
+              <div class="card small" style="width:30%; float:left; margin-left:1.5%; margin-right:1.5%;">
+                <div class="card-image waves-effect waves-block waves-light small">
+                  <img class="activator" src="img/blobgame.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Blob Game<i class="material-icons right">more_vert</i></span>
+                  <p><a href="https://github.com/stan-sack/Blob-Game">GitHub</a></p>
+                </div>
+                <div class="card-reveal" style="box-sizing: border-box">
+                  <span class="card-title grey-text text-darken-4">Blob Game<i class="material-icons right">close</i></span>
+                  <p>Collaboration with Adelaide artist <a href="http://www.nicholashanisch.com.au/">Nick Hanisch</a> to attempt a small game in Java.
+                    More a proof of concept than anything else. Currently in the stages of moving into libGDX
+                    to allow port for Android and iOS.</p>
+                  </div>
+                </div>
 
-<!----- SLIDES END --->
+                <div class="card small" style="width:30%; float:left; margin-left:1.5%; margin-right:1.5%">
+                  <div class="card-image waves-effect waves-block waves-light small">
+                    <img class="activator" src="img/itutorsuite.png">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">iTutor Suite<i class="material-icons right">more_vert</i></span>
+                    <p><a href="http://itutorworld.com.au/">itutorworld.com.au</a></p>
+                  </div>
+                  <div class="card-reveal" style="box-sizing: border-box">
+                    <span class="card-title grey-text text-darken-4">iTutor Suite<i class="material-icons right">close</i></span>
+                    <p>Contributed to maintance of Delphi software.</p>
+                  </div>
+                </div>
 
-</body>
-</html>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div id="slide7">
+            <div class="content">
+              <h1>Resume</h1>
+            </div>
+          </div>
+
+          <div id="slide8" >
+
+            <div class="quotes_container" style="height:82em">
+              <!-- <object data='pdf/resume.pdf'
+              type='application/pdf'
+              width='100%'
+              height='90%'> -->
+              <img src="img/resume.jpg" alt="example-image" style="width:100%">
+              <!-- <p>This browser does not support inline PDFs. Please download the PDF to view it: <a href="pdf/resume.pdf">Download PDF</a></p> -->
+              <!-- </object> -->
+
+            </div>
+          </div>
+          <div id="slide9">
+            <div class="content">
+              <div id="copyright"><a href="http://www.stantsouvallas.tk/">Copyright Stan Tsouvallas 2016</a></div>
+            </div>
+          </div>
+
+
+          <!----- SLIDES END --->
+
+        </body>
+        </html>
