@@ -1,3 +1,12 @@
+function clearData() {
+  config.data.datasets.data = [100];
+  config.data.datasets[0].data = [100];
+  config.data.labels = ["Initialise by choosing a skill"];
+  window.myRadar.update();
+
+    console.log(config);
+}
+
 function add(language, rating) {
   if (config.data.datasets.length > 0) {
     if (config.data.labels.indexOf('Initialise by choosing a skill') != -1){

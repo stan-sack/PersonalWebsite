@@ -302,7 +302,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 
 #canvas{
 	width:100%;
-	padding-bottom: 100px;
+	/*padding-bottom: 100px;*/
 }
 
 /*= FOOTER
@@ -326,4 +326,27 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 
 .demo{
 	margin-bottom: 2em;
+}
+
+#clear-button{
+	margin-top:20px;
+	margin-bottom: 100px;
+	text-align: center;
+	padding: 15px;
+	color:#444444;
+	font-weight: bold;
+	font-family: 'Monserrat';
+	transition: all 0.5s ease 0s;
+	display: inline-block;
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 2px;
+
+	box-shadow: inset 0 0 0 0 #444444;
+}
+
+#clear-button:hover{
+	box-shadow: inset 100px 0px 0px 0px #444444;
+	color:white;
+	border-color: #444444;
 }
