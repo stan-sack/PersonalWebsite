@@ -226,7 +226,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 
 #slide1, #slide2{ width: 100%; }
 #slide1{
-	background:url('../img/slide1.jpg') 50% 0 no-repeat fixed;
+	background:url(../img/dummy8.jpg) 50% 0 no-repeat fixed;
 	color: #fff;
 	height: 18.75em;
 	margin: 0;
@@ -244,7 +244,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 }
 
 #slide3{
-	background: url(../img/slide3.jpg) 50% 0 no-repeat fixed;
+	background: url(../img/dummy3.jpg) 50% 0 no-repeat fixed;
 	color: #fff;
 	height: 18.75em;
 	padding: 135px 0 0 0;
@@ -259,7 +259,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 }
 
 #slide5{
-	background: url(../img/slide5.jpg) 50% 0 no-repeat fixed;
+	background: url(../img/dummy5.jpg) 50% 0 no-repeat fixed;
 	height: 18.75em;
 	margin: 0 auto;
 	padding: 135px 0 0 0;
@@ -275,7 +275,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 }
 
 #slide7{
-	background: url(../img/slide7.jpg) 50% 0 no-repeat fixed;
+	background: url(../img/dummy9.jpg) 50% 0 no-repeat fixed;
 	height: 18.75em;
 	margin: 0 auto;
 	padding: 135px 0 0 0;
