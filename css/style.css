@@ -77,24 +77,32 @@ a.rpanel:hover{ color: #fff; }
 --------------------------------------------------------*/
 #linkedin-icon{
 	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+
 }
 #linkedin-icon:hover{
 	color: #0077b5
 }
 #email-icon{
 	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+
 }
 #email-icon:hover{
 	color:#666699;
 }
 #facebook-icon{
 	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+
 }
 #facebook-icon:hover{
 	color:#3b5998
 }
 #github-icon{
 	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+
 }
 #github-icon:hover{
 	color:#6e5494;
@@ -139,6 +147,8 @@ a.rpanel:hover{ color: #fff; }
 	float:left;
 	font-weight: bold;
 	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+
 
 }
 
@@ -150,7 +160,7 @@ a.rpanel:hover{ color: #fff; }
 	padding-bottom: 13px;
 }
 
-.menubar li a { color: #0066cc; opacity:1; font-size: 16px; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: bold;transition: all 0.3s ease 0s;}
+.menubar li a { color: #0066cc; opacity:1; font-size: 16px; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: bold;transition: all 0.3s ease 0s;	-webkit-transition: all 0.3s ease 0s}
 
 .menubar li a:hover { color: #0066cc; opacity:1; background: white; font-weight: bold;}
 
@@ -337,6 +347,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	font-weight: bold;
 	font-family: 'Monserrat';
 	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
 	display: inline-block;
 	border-style: solid;
 	border-width: 3px;
