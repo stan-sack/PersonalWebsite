@@ -234,9 +234,9 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 /*= SLIDES STYLING
 --------------------------------------------------------*/
 
-/*#slide1, #slide2{ width: 100%; }*/
+#slide1, #slide2{ width: 100%; }
 #slide1{
-	background:url(../img/dummy8.jpg) 50% 0 no-repeat fixed;
+	background:url(../img/dummy3.jpg) 50% 0 no-repeat fixed;
 	color: #fff;
 	height: 18.75em;
 	margin: 0;
