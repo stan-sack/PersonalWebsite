@@ -12,6 +12,7 @@ import React, { PropTypes } from 'react';
 import cx from 'classnames';
 import Header from '../Header';
 import Footer from '../Footer';
+import MenuBar from '../MenuBar';
 import s from './Layout.css';
 
 class Layout extends React.Component {
@@ -30,14 +31,16 @@ class Layout extends React.Component {
 
     render() {
         return (
-            <div className="mdl-layout mdl-js-layout" ref={node => (this.root = node)}>
-                <div className="mdl-layout__inner-container">
-                    <Header />
-                    <main className="mdl-layout__content">
-                        <div {...this.props} className={cx(s.content, this.props.className)} />
-                    </main>
-                    <Footer />
-                </div>
+            <div ref={node => (this.root = node)}>
+                <Header />
+                <div id="top" />
+                <MenuBar
+                    items={[
+                        { link: '#slide1', text: 'Points to slide1' },
+                        { link: '#slide2', text: 'Points to slide2' },
+                    ]}
+                />
+                <Footer />
             </div>
         );
     }
