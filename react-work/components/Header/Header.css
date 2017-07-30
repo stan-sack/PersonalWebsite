@@ -1,0 +1,47 @@
+.header {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    color: white;
+    z-index: 5;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.header > a {
+    margin: 4px;
+}
+
+#linkedinIcon{
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+}
+#linkedinIcon:hover{
+    color: #0077b5
+}
+#emailIcon{
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+
+}
+#emailIcon:hover{
+    color:#666699;
+}
+#facebookIcon{
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+
+}
+#facebookIcon:hover{
+    color:#3b5998
+}
+#githubIcon{
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+
+}
+#githubIcon:hover{
+    color:#6e5494;
+}

@@ -1,0 +1,29 @@
+.footer {
+    width:100%;
+	background-color: black;
+	position:fixed;
+	bottom:0px;
+	text-align: center;
+	color: white;
+	z-index: 5;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.footer > a {
+    margin: 6px;
+}
+
+#homeIcon{
+    transition: all 0.9s ease 0s;
+    -webkit-transition: all 0.9s ease 0s;
+    background-color: white;
+    color: black;
+    padding: 0px;
+    border-radius: 5px;
+}
+#homeIcon:hover{
+    color: white;
+    background-color: black;
+}
