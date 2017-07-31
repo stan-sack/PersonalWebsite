@@ -12,7 +12,7 @@ import React, { PropTypes } from 'react';
 import cx from 'classnames';
 import Header from '../Header';
 import Footer from '../Footer';
-import MenuBar from '../MenuBar';
+import ImageSlide from '../ImageSlide';
 import s from './Layout.css';
 
 class Layout extends React.Component {
@@ -22,11 +22,11 @@ class Layout extends React.Component {
     };
 
     componentDidMount() {
-        window.componentHandler.upgradeElement(this.root);
+        // window.componentHandler.upgradeElement(this.root);
     }
 
     componentWillUnmount() {
-        window.componentHandler.downgradeElements(this.root);
+        // window.componentHandler.downgradeElements(this.root);
     }
 
     render() {
@@ -34,12 +34,10 @@ class Layout extends React.Component {
             <div ref={node => (this.root = node)}>
                 <Header />
                 <div id="top" />
-                <MenuBar
-                    items={[
-                        { link: '#slide1', text: 'Points to slide1' },
-                        { link: '#slide2', text: 'Points to slide2' },
-                    ]}
-                />
+                <ImageSlide backgroundImage="/img/slide1.jpg">
+                    <h1>STAN TSOUVALLAS</h1>
+                    <h2>SOFTWARE ENGINEER</h2>
+                </ImageSlide>
                 <Footer />
             </div>
         );
@@ -47,3 +45,10 @@ class Layout extends React.Component {
 }
 
 export default Layout;
+
+// <MenuBar
+//     items={[
+//         { link: '#slide1', text: 'Points to slide1' },
+//         { link: '#slide2', text: 'Points to slide2' },
+//     ]}
+// />

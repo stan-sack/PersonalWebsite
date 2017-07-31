@@ -5,11 +5,11 @@ import s from './Header.css';
 class Header extends React.Component {
 
     componentDidMount() {
-        window.componentHandler.upgradeElement(this.root);
+        // window.componentHandler.upgradeElement(this.root);
     }
 
     componentWillUnmount() {
-        window.componentHandler.downgradeElements(this.root);
+        // window.componentHandler.downgradeElements(this.root);
     }
 
     render() {
@@ -19,7 +19,7 @@ class Header extends React.Component {
                     <FontAwesome
                         name="linkedin-square"
                         size="2x"
-                        inverse="true"
+                        inverse
                         aria-hidden="true"
                         id={s.linkedinIcon}
                     />
@@ -28,25 +28,25 @@ class Header extends React.Component {
                     <FontAwesome
                         name="envelope-square"
                         size="2x"
-                        inverse="true"
+                        inverse
                         aria-hidden="true"
                         id={s.emailIcon}
                     />
                 </a>
-                <a href="au.linkedin.com/in/stantsouvallas">
+                <a href="https://www.facebook.com/stan.tsouvallas">
                     <FontAwesome
                         name="facebook-square"
                         size="2x"
-                        inverse="true"
+                        inverse
                         aria-hidden="true"
                         id={s.facebookIcon}
                     />
                 </a>
-                <a href="au.linkedin.com/in/stantsouvallas">
+                <a href="https://github.com/stan-sack">
                     <FontAwesome
                         name="github-square"
                         size="2x"
-                        inverse="true"
+                        inverse
                         aria-hidden="true"
                         id={s.githubIcon}
                     />

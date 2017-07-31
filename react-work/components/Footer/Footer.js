@@ -9,7 +9,7 @@ function Footer() {
                 <FontAwesome
                     name="home"
                     size="2x"
-                    inverse="true"
+                    inverse
                     aria-hidden="true"
                     id={s.homeIcon}
                 />
