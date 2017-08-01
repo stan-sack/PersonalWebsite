@@ -1,35 +1,17 @@
 import React, { PropTypes } from 'react';
 import s from './MenuBar.css';
 
-class MenuBar extends React.Component {
+const MenuBar = () => (
+    <div className={s.menuBarContainer}>
+        <ul className={s.menuBar}>
+            <li><a href={'#about'}>{'About'}</a></li>
+            <li><a href={'#portfolio'}>{'Portfolio'}</a></li>
+            <li><a href={'#skillset'}>{'Skill Set'}</a></li>
+            <li><a href={'#resume'}>{'Resume'}</a></li>
+        </ul>
+    </div>
+);
 
-    static propTypes = {
-        items: PropTypes.arrayOf(
-            PropTypes.object,
-        ),
-    };
-
-    componentDidMount() {
-        window.componentHandler.upgradeElement(this.root);
-    }
-
-    componentWillUnmount() {
-        window.componentHandler.downgradeElements(this.root);
-    }
-
-    render() {
-        const listItems = this.props.items.map(item =>
-            <li><a href={item.link}>{item.text}</a></li>
-        );
-
-        return (
-            <div className="menuBarContainer">
-                <ul className="menuBar">
-                    {listItems}
-                </ul>
-            </div>
-        );
-    }
-}
+MenuBar.propTypes = {};
 
 export default MenuBar;

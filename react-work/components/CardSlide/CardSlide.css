@@ -1,0 +1,39 @@
+@media screen and (orientation:portrait) {
+    .cardSlide {
+        display: flex;
+        margin: 5%;
+        height: 100%;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .cardStyle {
+        width: 40vh;
+        height: 60vh;
+        margin: 5%;
+        text-align: center;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    .cardSlide {
+        display: flex;
+        margin: 5%;
+        height: 100%;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .cardStyle {
+        width: 12vw;
+        height: 18vw;
+        margin: 1%;
+        text-align: center;
+    }
+}

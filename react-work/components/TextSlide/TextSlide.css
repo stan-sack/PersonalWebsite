@@ -1,0 +1,56 @@
+/* Portrait */
+@media screen and (orientation:portrait) {
+    .textSlide {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        text-align: center;
+        background: no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+        flex-direction: column;
+        background: no-repeat center center fixed;
+    }
+
+    .quote {
+    	font-family: 'Goudy Bookletter 1911', serif;
+    	font-weight: normal;
+    	font-size: 2.5vh;
+        line-height: 3.5vh;
+    	text-align: justify;
+        justify-content: center;
+    	margin: 10%;
+    }
+}
+/* Landscape */
+@media screen and (orientation:landscape) {
+    .textSlide {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        text-align: center;
+        background: no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+        flex-direction: column;
+        background: no-repeat center center fixed;
+    }
+
+    .quote {
+    	font-family: 'Goudy Bookletter 1911', serif;
+    	font-weight: normal;
+    	font-size: 1.5vw;
+        line-height: 2.5vw;
+    	text-align: justify;
+        justify-content: center;
+    	margin: 10%;
+    }
+}

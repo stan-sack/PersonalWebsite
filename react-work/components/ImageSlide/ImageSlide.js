@@ -1,30 +1,20 @@
 import React, { PropTypes } from 'react';
 import s from './ImageSlide.css';
 
-class ImageSlide extends React.Component {
+const ImageSlide = ({ backgroundImage, children }) => (
+    <div
+        className={s.backgroundSlide}
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
+        {children}
+    </div>
+)
 
-    static propTypes = {
-        children: PropTypes.arrayOf(PropTypes.element),
-        backgroundImage: PropTypes.string
-    };
-
-    componentDidMount() {
-    }
-
-    componentWillUnmount() {
-    }
-
-    render() {
-        return (
-            <div
-                className={s.backgroundSlide}
-                style={{ backgroundImage: `url(${this.props.backgroundImage})` }}
-            >
-                {this.props.children}
-            </div>
-        );
-    }
-
+ImageSlide.propTypes = {
+    backgroundImage: PropTypes.string,
+    children: PropTypes.oneOfType(
+        [PropTypes.object, PropTypes.arrayOf(PropTypes.element)]
+    )
 }
 
 export default ImageSlide;
