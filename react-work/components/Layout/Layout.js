@@ -49,6 +49,9 @@ const Layout = () => (
             <h1>Slide2</h1>
         </ImageSlide>
         <CardSlide />
+            <ImageSlide backgroundImage="/img/slide3.jpg">
+                <h1>Slide3</h1>
+            </ImageSlide>
         <Footer />
     </div>
 );
