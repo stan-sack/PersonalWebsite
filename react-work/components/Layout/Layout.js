@@ -15,6 +15,7 @@ import Footer from '../Footer';
 import ImageSlide from '../ImageSlide';
 import TextSlide from '../TextSlide';
 import CardSlide from '../CardSlide';
+import ChartSlide from '../ChartSlide'
 import MenuBar from '../MenuBar';
 import s from './Layout.css';
 
@@ -52,6 +53,7 @@ const Layout = () => (
             <ImageSlide backgroundImage="/img/slide3.jpg">
                 <h1>Slide3</h1>
             </ImageSlide>
+        <ChartSlide />
         <Footer />
     </div>
 );
