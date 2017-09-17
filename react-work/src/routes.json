@@ -1,7 +1,7 @@
 [
   {
     "path": "/",
-    "page": "./home",
+    "page": "./routes/home",
     "chunk": "main",
     "data": {
       "articles": "GET https://gist.githubusercontent.com/koistya/a32919e847531320675764e7308b796a/raw/articles.json"
@@ -9,15 +9,15 @@
   },
   {
     "path": "/error",
-    "page": "./error",
+    "page": "./routes/error",
     "chunk": "main"
   },
   {
     "path": "/about",
-    "page": "./about"
+    "page": "./routes/about"
   },
   {
     "path": "/tasks/:status(pending|completed)?",
-    "page": "./home"
+    "page": "./routes/home"
   }
 ]

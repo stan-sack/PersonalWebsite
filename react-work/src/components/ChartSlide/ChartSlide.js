@@ -1,18 +1,16 @@
-import React from 'react';
-import { Radar } from 'react-chartjs-2';
+import React from 'react'
+import { Radar } from 'react-chartjs-2'
 import deepcopy from 'deepcopy'
-import s from './ChartSlide.css';
-
-
+import s from './ChartSlide.css'
 
 class ChartSlide extends React.Component {
 
 	static randomColorFactor() {
-		return Math.round(Math.random() * 255);
+		return Math.round(Math.random() * 255)
 	}
 
 	static randomScalingFactor() {
-		return Math.round(Math.random() * 100);
+		return Math.round(Math.random() * 100)
 	}
 
 	constructor(props) {
@@ -85,11 +83,8 @@ class ChartSlide extends React.Component {
 	componentDidMount() {}
 
 	clearData() {
-		this.tempState.config.datasets.data = [100];
-		this.tempState.config.datasets[0].data = [100];
-		this.tempState.config.labels = [''];
+		this.skillsList.map((skill) => this.add(skill.name, skill.level))
 		this.skillsList = this.skillsList.map((skill) => ({...skill, selected: false}))
-		this.setState(this.tempState);
 		// window.myRadar.update();
 	}
 
@@ -187,8 +182,9 @@ class ChartSlide extends React.Component {
 				<Radar
 					data={this.state.config}
 					options={this.state.options}
-					height={0.035*window.innerHeight} />
-				<div onClick={this.clearData} className={s.clearButton}>Clear</div>
+					height={0.35*window.innerHeight}
+					width={window.innerWidth} />
+				<h4><div onClick={this.clearData} className={s.clearButton}>Clear</div></h4>
 			</div>
 		);
 	}
