@@ -7,7 +7,7 @@ import Carousel from '../Carousel';
 const generateCarousel = (cards) => {
 	console.log(cards)
 	return (
-		<Carousel autoPlayInterval={4500} indicator={true} switcher={true}>
+		<Carousel indicator={true} switcher={true}>
 			{cards.map((card, index) => {
 				return (
 					<div key={index}>{card}</div>

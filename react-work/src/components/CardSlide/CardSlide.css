@@ -11,12 +11,12 @@
     }
 
     .cardStyle {
-        width: 20vh;
-        height: 30vh;
+        width: 35vh;
+        height: 60vh;
         margin: 5%;
         text-align: left;
 		position: relative;
-		left: -10vh;
+		left: -20vh;
     }
 }
 

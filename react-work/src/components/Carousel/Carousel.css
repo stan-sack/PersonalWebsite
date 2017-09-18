@@ -46,10 +46,10 @@
 .slider ol + div button {
 	position: absolute;
 	font-size: inherit;
-	background-color: black;
+	background-color: white;
 	height: 2em;
 	width: 2em;
-	opacity: .5;
+	opacity: 1;
 	padding: 0;
 	border: 0;
 	outline: none;

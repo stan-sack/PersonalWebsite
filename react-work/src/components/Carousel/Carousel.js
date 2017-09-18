@@ -1,6 +1,7 @@
 import React, {Component, Children} from 'react';
 import PropTypes from 'prop-types';
 import s from './Carousel.css';
+import FontAwesome from 'react-fontawesome';
 
 class Carousel extends Component {
 	constructor(props) {
@@ -111,6 +112,7 @@ class Carousel extends Component {
 			<div {...props} className={s.slider} style={Object.assign({}, props.style, {
 				position: 'relative',
 				overflowY: 'hidden',
+				overflowX: 'hidden',
 				touchAction: 'pan-y pinch-zoom',
 				willChange: 'transform'
 			})}>
@@ -137,8 +139,18 @@ class Carousel extends Component {
 					)}
 				</ol>}
 				{enabled && switcher && <div>
-					<button type="button" className={s.prev} onClick={goPrevSlide}></button>
-					<button type="button" className={s.next} onClick={goNextSlide}></button>
+					<button type="button" className={s.prev} onClick={goPrevSlide}>
+						<FontAwesome
+		                	name="arrow-circle-o-left"
+		                	size="2x"
+		                	aria-hidden="true"/>
+						</button>
+					<button type="button" className={s.next} onClick={goNextSlide}>
+						<FontAwesome
+		                	name="arrow-circle-o-right"
+		                	size="2x"
+		                	aria-hidden="true"/>
+					</button>
 				</div>}
 			</div>
 		);
