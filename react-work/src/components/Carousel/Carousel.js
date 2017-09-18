@@ -26,6 +26,7 @@ class Carousel extends Component {
 	onTransitionEnd() { // this will not be triggered when document.hidden
 		let {slide} = this.state;
 		const count = Children.count(this.props.children);
+		console.log(count);
 		if (slide == count + 1) slide = 1;
 		if (slide == 0) slide = count;
 		this.setState({slide, sliding: false}, () => {
@@ -78,6 +79,12 @@ class Carousel extends Component {
 		event.stopPropagation();
 		event.nativeEvent.stopPropagation();
 	}
+	getOffset(slide, slides) {
+		console.log(slide)
+		let index = Math.floor(slides.length / 2) - slide + 1
+		console.log(index)
+		return index
+	}
 	render() {
 		const {children, switcher, indicator, transitionDuration, transitionTimingFunction, slideWillChange, slideDidChange} = this.props;
 		const props = Object.assign({}, this.props); // rest parameters is not available before node 8
@@ -99,10 +106,11 @@ class Carousel extends Component {
 			flexBasis: '100%',
 			flexShrink: 0
 		};
+		console.log(slides)
 		return (
 			<div {...props} className={s.slider} style={Object.assign({}, props.style, {
 				position: 'relative',
-				overflowX: 'hidden',
+				overflowY: 'hidden',
 				touchAction: 'pan-y pinch-zoom',
 				willChange: 'transform'
 			})}>
@@ -112,7 +120,8 @@ class Carousel extends Component {
 					margin: 0,
 					display: 'flex',
 					transitionProperty: sliding ? 'transform' : 'none',
-					transform: enabled ? (dragging && offset !== 0 ? 'translateX(calc(' + (offset * 1) + 'px - ' + slide * 100 + '%))' : 'translateX(-' + slide * 100 + '%)') : null,
+					justifyContent: 'center',
+					transform: enabled ? (dragging && offset !== 0 ? 'translateX(calc(' + (offset * 1) + 'px - ' + slide * 100 + '%))' : 'translateX(' + this.getOffset(slide, slides) * 100 + '%)') : null,
 					transitionDuration,
 					transitionTimingFunction
 				}} {...this.events}>

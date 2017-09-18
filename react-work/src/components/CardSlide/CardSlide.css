@@ -15,6 +15,8 @@
         height: 30vh;
         margin: 5%;
         text-align: left;
+		position: relative;
+		left: -10vh;
     }
 }
 
@@ -51,10 +53,11 @@
     }
 
     .cardStyle {
-        width: 16em;
-        height: 24em;
-        margin: 1%;
+        width: 24em;
+        height: 36em;
         text-align: left;
+		position: relative;
+		left: -12em;
     }
 }
 
