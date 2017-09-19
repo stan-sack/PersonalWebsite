@@ -49,11 +49,14 @@
 	background-color: white;
 	height: 2em;
 	width: 2em;
-	opacity: 1;
+	opacity: 0.5;
 	padding: 0;
 	border: 0;
 	outline: none;
 	cursor: pointer;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
 }
 
 .slider .prev {
@@ -62,4 +65,11 @@
 
 .slider .next {
 	right: 0;
+}
+
+.prev:hover, .next:hover {
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
 }
