@@ -3,7 +3,7 @@ import { Radar } from 'react-chartjs-2'
 import deepcopy from 'deepcopy'
 import s from './ChartSlide.css'
 
-class ChartSlide extends React.Component {
+export default class ChartSlide extends React.Component {
 
 	static randomColorFactor() {
 		return Math.round(Math.random() * 255)
@@ -196,5 +196,3 @@ class ChartSlide extends React.Component {
 		)
 	}
 }
-
-export default ChartSlide

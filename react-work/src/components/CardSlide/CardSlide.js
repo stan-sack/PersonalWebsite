@@ -229,18 +229,22 @@ const cards = (
 )
 
 
-const CardSlide = () => (
-	<div className={s.cardSlide}>
-		<MediaQuery query='(min-device-width: 1920px)' className={s.cardSlide}>
-			{cards}
-		</MediaQuery>
-		<MediaQuery query='(max-device-width: 1920px)' className={s.cardSlide}>
-			{generateCarousel(cards.props.children)}
-		</MediaQuery>
-	</div>
-)
+export default class CardSlide extends React.Component {
+	render() {
+		return (
+			<div className={s.cardSlide}>
+				<MediaQuery query='(min-device-width: 1920px)' className={s.cardSlide}>
+					{cards}
+				</MediaQuery>
+				<MediaQuery query='(max-device-width: 1920px)' className={s.cardSlide}>
+					{generateCarousel(cards.props.children)}
+				</MediaQuery>
+			</div>
+		)
+	}
+}
+
 
 CardSlide.propTypes = {}
 
-export default CardSlide
 // <Card className={s.cardStyle}>

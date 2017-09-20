@@ -1,10 +1,8 @@
 import React from 'react'
 import s from './ResumeSlide.css'
 import PDF from 'react-pdf-js'
-import FontAwesome from 'react-fontawesome'
-import MediaQuery from 'react-responsive'
 
-class ResumeSlide extends React.Component {
+export default class ResumeSlide extends React.Component {
 	state = { scale: 3.2 }
 
 	zoomIn() {
@@ -26,7 +24,11 @@ class ResumeSlide extends React.Component {
 			<div className={s.resumeSlide}>
 				<div className={s.resumeSlideOuter}>
 					<div className={s.pdfInner}>
-						<PDF scale={this.state.scale} className={s.pdfContainer} file='/assets/cv_for_website.pdf' page={1} />
+						<PDF
+							scale={this.state.scale}
+							className={s.pdfContainer}
+							file='/assets/cv_for_website.pdf'
+							page={1} />
 					</div>
 				</div>
 			</div>
@@ -35,8 +37,6 @@ class ResumeSlide extends React.Component {
 }
 
 ResumeSlide.propTypes = {}
-
-export default ResumeSlide
 
 // <div className={s.zoomButtons}>
 // 	<MediaQuery query='(min-device-width: 1000px)' className={s.cardSlide}>

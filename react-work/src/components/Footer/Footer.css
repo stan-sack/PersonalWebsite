@@ -15,6 +15,7 @@
 }
 
 #homeIcon{
+	cursor: pointer;
     transition: all 0.9s ease 0s;
     -webkit-transition: all 0.9s ease 0s;
     background-color: white;
@@ -23,6 +24,7 @@
     border-radius: 5px;
 }
 #homeIcon:hover{
+	cursor: pointer;
     color: white;
     background-color: black;
 }

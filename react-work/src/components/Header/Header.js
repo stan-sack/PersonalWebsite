@@ -2,6 +2,7 @@ import FontAwesome from 'react-fontawesome';
 import React from 'react';
 import s from './Header.css';
 
+
 const Header = () => (
     <header className={s.header} >
         <a href="au.linkedin.com/in/stantsouvallas">
