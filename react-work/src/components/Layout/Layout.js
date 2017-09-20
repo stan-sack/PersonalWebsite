@@ -18,6 +18,7 @@ import CardSlide from '../CardSlide'
 import ChartSlide from '../ChartSlide'
 import MenuBar from '../MenuBar'
 import ResumeSlide from '../ResumeSlide'
+import CopyrightSlide from '../CopyrightSlide'
 
 import s from './Layout.css'
 
@@ -60,6 +61,7 @@ const Layout = () => (
 			<h1>Resume</h1>
 		</ImageSlide>
 		<ResumeSlide />
+		<CopyrightSlide />
 		<Footer />
 	</div>
 )

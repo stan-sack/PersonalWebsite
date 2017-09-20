@@ -1,4 +1,48 @@
-
 .resumeSlide {
 	height: 100%;
+	display: block;
+}
+.resumeSlideOuter {
+	display: flex;
+}
+
+.pdfInner {
+	flex: 0 1 auto;
+	display: flex;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	object-fit: contain;
+}
+
+.pdfContainer {
+	margin-top: 2%;
+	flex: 0 1 auto;
+	height: 90%;
+	object-fit: contain;
+	width: 100%
+}
+
+.zoomButtons {
+	position: absolute;
+	z-index: 10;
+	right: 2%;
+}
+
+.zoomInButton, .zoomOutButton {
+	cursor: pointer;
+	opacity: 0.5;
+	color: black;
+	transition: opacity .15s ease-in-out;
+	-moz-transition: opacity .15s ease-in-out;
+	-webkit-transition: opacity .15s ease-in-out;
+}
+
+.zoomInButton:hover, .zoomOutButton:hover {
+	cursor: pointer;
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
 }

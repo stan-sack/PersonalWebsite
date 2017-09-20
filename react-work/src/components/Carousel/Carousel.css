@@ -44,6 +44,7 @@
 }
 
 .slider ol + div button {
+	cursor: pointer;
 	position: absolute;
 	font-size: inherit;
 	background-color: white;
@@ -54,9 +55,9 @@
 	border: 0;
 	outline: none;
 	cursor: pointer;
-	transition: opacity .25s ease-in-out;
-	-moz-transition: opacity .25s ease-in-out;
-	-webkit-transition: opacity .25s ease-in-out;
+	transition: opacity .15s ease-in-out;
+	-moz-transition: opacity .15s ease-in-out;
+	-webkit-transition: opacity .15s ease-in-out;
 }
 
 .slider .prev {
@@ -68,6 +69,7 @@
 }
 
 .prev:hover, .next:hover {
+	cursor: pointer;
 	opacity: 1;
 	transition: opacity .25s ease-in-out;
 	-moz-transition: opacity .25s ease-in-out;

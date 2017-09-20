@@ -1,0 +1,17 @@
+.copyrightSlide {
+	height: 17%;
+	display: block;
+	background-color: black;
+}
+
+.copyright {
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+
+	padding-top: 2%;
+	text-align: center;
+}
+.copyright a {
+	text-decoration: none;
+	color: white;
+}

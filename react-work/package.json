@@ -27,6 +27,7 @@
     "react-fontawesome": "^1.6.1",
     "react-materialize": "^1.0.10",
     "react-mdl": "^1.9.0",
+    "react-pdf-js": "2.0.1",
     "react-redux": "^5.0.3",
     "react-responsive": "^1.3.4",
     "react-tap-event-plugin": "^2.0.1",
