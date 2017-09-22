@@ -6,7 +6,9 @@ const CopyrightSlide = () => (
 	<div className={s.copyrightSlide}>
 		<div className={s.content}>
 			<div className={s.copyright}>
-				<a href='http://www.stantsouvallas.com/'>{`Copyright Stan Tsouvallas ${new Date().getFullYear()}`}</a>
+				<a href='https://github.com/stan-sack/PersonalWebsite'>
+					{`Copyright Stan Tsouvallas ${new Date().getFullYear()}`}
+				</a>
 				<br />
 				<a href='https://github.com/stan-sack/PersonalWebsite'>View the source code</a>
 			</div>
