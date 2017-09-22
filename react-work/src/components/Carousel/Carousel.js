@@ -27,7 +27,6 @@ class Carousel extends Component {
 	onTransitionEnd() { // this will not be triggered when document.hidden
 		let { slide } = this.state
 		const count = Children.count(this.props.children)
-		console.log(count)
 		if (slide === count + 1) slide = 1
 		if (slide === 0) slide = count
 		this.setState({ slide, sliding: false }, () => {
@@ -87,9 +86,7 @@ class Carousel extends Component {
 		event.nativeEvent.stopPropagation()
 	}
 	getOffset(slide, slides) {
-		console.log(slide)
 		let index = Math.floor(slides.length / 2) - slide + 1
-		console.log(index)
 		return index
 	}
 	render() {
