@@ -187,6 +187,7 @@ export default class ChartSlide extends React.Component {
 				</div>
 				<h4 className={s.chartLabel}>Choose your required skills</h4>
 				<Radar
+					redraw
 					data={this.state.config}
 					options={this.state.options}
 					height={0.35 * window.innerHeight}

@@ -14,13 +14,44 @@
 	left:0;
 	height:100%;
 	width:100%;
-	display: none;
 	background-image:url('../img/turnDevice.png');
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
 
-canvas {
-  width: 100% !important;
+@media screen and (orientation:portrait), screen and (orientation:landscape) and (min-width:720px){
+	#container {
+		display: block;
+	}
+	.turnDeviceNotification {
+		position:fixed;
+		top: 0;
+		left:0;
+		height:100%;
+		width:100%;
+		display: none;
+		background-image:url('../img/turnDevice.png');
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
+}
+
+@media screen and (orientation:landscape) and (max-width:720px){
+	#container {
+		display: none;
+	}
+	.turnDeviceNotification {
+		position:fixed;
+		top: 0;
+		left:0;
+		height:100%;
+		width:100%;
+		display: block;
+		background-image:url('../img/turnDevice.png');
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
 }

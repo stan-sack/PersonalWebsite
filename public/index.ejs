@@ -35,15 +35,6 @@
 		<script src="https://www.google-analytics.com/analytics.js" async defer></script>
 		<%_ } _%>
 		<script>
-		screen.orientation.onchange = function(e) {
-			if (window.innerWidth > window.innerHeight) {
-				$('.turnDeviceNotification').css('display', 'block');
-				$('#container').css('display', 'none');
-			} else {
-				$('.turnDeviceNotification').css('display', 'none');
-				$('#container').css('display', 'block');
-			}
-		};
 		$(window).load(function() {
 			// Animate loader off screen
 			$(".se-pre-con").fadeOut("slow");;
