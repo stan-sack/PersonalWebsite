@@ -189,7 +189,10 @@ export default class ChartSlide extends React.Component {
 				<Radar
 					redraw
 					data={this.state.config}
-					options={this.state.options}
+					options={{
+						...this.state.options,
+						maintainAspectRation: true
+					}}
 					height={0.35 * window.innerHeight}
 					width={window.innerWidth} />
 				<h4><div onClick={this.clearData} className={s.clearButton}>Clear</div></h4>
