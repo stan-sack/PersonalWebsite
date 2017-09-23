@@ -5,7 +5,7 @@ import s from './Header.css';
 
 const Header = () => (
     <header className={s.header} >
-        <a href="au.linkedin.com/in/stantsouvallas">
+        <a href="https://au.linkedin.com/in/stantsouvallas">
             <FontAwesome
                 name="linkedin-square"
                 size="2x"
