@@ -16,6 +16,7 @@ deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_ACCESS_KEY_SECRET
+  s3_region: $AWS_DEFAULT_REGION
   bucket: "stantsouvallas.com"
   local_dir: public
   skip_cleanup: true
