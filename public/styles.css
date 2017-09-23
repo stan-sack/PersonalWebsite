@@ -38,7 +38,7 @@
 	}
 }
 
-@media screen and (orientation:portrait) and (max-device-width:720px){
+@media screen and (orientation:landscape) and (max-device-height:720px){
 	#container {
 		display: none;
 	}
