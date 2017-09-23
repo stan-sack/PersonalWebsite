@@ -1,0 +1,22 @@
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../img/loading-screen.gif) center no-repeat #000;
+}
+
+.turnDeviceNotification {
+	position:fixed;
+	top: 0;
+	left:0;
+	height:100%;
+	width:100%;
+	display: none;
+	background-image:url('../img/turnDevice.png');
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}

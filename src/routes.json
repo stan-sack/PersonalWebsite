@@ -1,0 +1,16 @@
+[
+  {
+    "path": "/",
+    "page": "./routes/home",
+    "chunk": "main"
+  },
+  {
+    "path": "/error",
+    "page": "./routes/error",
+    "chunk": "main"
+  },
+  {
+    "path": "/tasks/:status(pending|completed)?",
+    "page": "./routes/home"
+  }
+]

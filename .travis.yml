@@ -1,0 +1,21 @@
+sudo: false
+language: node_js
+node_js:
+  - "6"
+
+cache:
+  directories:
+    - node_modules
+
+script:
+  - yarn build
+
+deploy:
+  on:
+    branch: production
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_ACCESS_KEY_SECRET
+  bucket: "stantsouvallas.com"
+  local_dir: public
+  skip_cleanup: true
