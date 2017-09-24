@@ -18,32 +18,188 @@ export default class ChartSlide extends React.Component {
 		this.add = this.add.bind(this)
 		this.clearData = this.clearData.bind(this)
 		this.skillsList = [
-			{ name: 'AWS',        icon: 'devicon-amazonwebservices-plain', level: '90', animation: 'imghvr-flip-diag-2',           selected:false },
-			{ name: 'React',      icon: 'devicon-react-plain',             level: '90', animation: 'imghvr-reveal-down',           selected:false },
-			{ name: 'Gulp',       icon: 'devicon-gulp-plain',              level: '85', animation: 'imghvr-hinge-down',            selected:false },
-			{ name: 'JavaScript', icon: 'devicon-javascript-plain',        level: '85', animation: 'imghvr-push-right',            selected:false },
-			{ name: 'Linux',      icon: 'devicon-linux-plain',             level: '80', animation: 'imghvr-slide-left',            selected:false },
-			{ name: 'Django',     icon: 'devicon-django-plain',            level: '80', animation: 'imghvr-reveal-left',           selected:false },
-			{ name: 'Angular',    icon: 'devicon-angularjs-plain',         level: '80', animation: 'imghvr-zoom-out-left',         selected:false },
-			{ name: 'Python',     icon: 'devicon-python-plain',            level: '80', animation: 'imghvr-shutter-out-diag-2',    selected:false },
-			{ name: 'CSS3',       icon: 'devicon-css3-plain',              level: '75', animation: 'imghvr-zoom-out',              selected:false },
-			{ name: 'Git',        icon: 'devicon-git-plain',               level: '75', animation: 'imghvr-hinge-left',            selected:false },
-			{ name: 'Webpack',    icon: 'devicon-webpack-plain',           level: '75', animation: 'imghvr-reveal-right',          selected:false },
-			{ name: 'HTML5',      icon: 'devicon-html5-plain',             level: '75', animation: 'imghvr-push-up',               selected:false },
-			{ name: 'GitLabCI',   icon: 'devicon-gitlab-plain',            level: '70', animation: 'imghvr-flip-diag-1',           selected:false },
-			{ name: 'JQuery',     icon: 'devicon-jquery-plain',            level: '70', animation: 'imghvr-fold-down',             selected:false },
-			{ name: 'TravisCI',   icon: 'devicon-travis-plain',            level: '70', animation: 'imghvr-shutter-in-out-diag-1', selected:false },
-			{ name: 'NodeJS',     icon: 'devicon-nodejs-plain',            level: '70', animation: 'imghvr-hinge-right',           selected:false },
-			{ name: 'Jasmine',    icon: 'devicon-jasmine-plain',           level: '65', animation: 'imghvr-slide-right',           selected:false },
-			{ name: 'Mocha',      icon: 'devicon-mocha-plain',             level: '65', animation: 'imghvr-zoom-in',               selected:false },
-			{ name: 'C++',        icon: 'devicon-cplusplus-plain',         level: '60', animation: 'imghvr-zoom-out-right',        selected:false },
-			{ name: 'Docker',     icon: 'devicon-docker-plain',            level: '60', animation: 'imghvr-push-down',             selected:false },
-			{ name: 'Nginx',      icon: 'devicon-nginx-plain',             level: '55', animation: 'imghvr-reveal-up',             selected:false },
-			{ name: 'Redis',      icon: 'devicon-redis-plain',             level: '50', animation: 'imghvr-flip-vert',             selected:false },
-			{ name: 'Java',       icon: 'devicon-java-plain',              level: '50', animation: 'imghvr-shutter-out-vert',      selected:false },
-			{ name: 'Android',    icon: 'devicon-android-plain',           level: '40', animation: 'imghvr-shutter-in-horiz',      selected:false },
-			{ name: 'PostgreSQL', icon: 'devicon-postgresql-plain',        level: '40', animation: 'imghvr-flip-horiz',            selected:false },
-			{ name: 'C',          icon: 'devicon-c-plain',                 level: '40', animation: 'imghvr-slide-up',              selected:false },
+			{
+				name: 'AWS',
+				icon: 'devicon-amazonwebservices-plain',
+				level: '90',
+				animation: 'imghvr-flip-diag-2',
+				selected:false
+			},
+			{
+				name: 'React',
+				icon: 'devicon-react-plain',
+				level: '90',
+				animation: 'imghvr-reveal-down',
+				selected:false
+			},
+			{
+				name: 'Gulp',
+				icon: 'devicon-gulp-plain',
+				level: '85',
+				animation: 'imghvr-hinge-down',
+				selected:false
+			},
+			{
+				name: 'JavaScript',
+				icon: 'devicon-javascript-plain',
+				level: '85',
+				animation: 'imghvr-push-right',
+				selected:false
+			},
+			{
+				name: 'Linux',
+				icon: 'devicon-linux-plain',
+				level: '80',
+				animation: 'imghvr-slide-left',
+				selected:false
+			},
+			{
+				name: 'Django',
+				icon: 'devicon-django-plain',
+				level: '80',
+				animation: 'imghvr-reveal-left',
+				selected:false
+			},
+			{
+				name: 'Angular',
+				icon: 'devicon-angularjs-plain',
+				level: '80',
+				animation: 'imghvr-zoom-out-left',
+				selected:false
+			},
+			{
+				name: 'Python',
+				icon: 'devicon-python-plain',
+				level: '80',
+				animation: 'imghvr-shutter-out-diag-2',
+				selected:false
+			},
+			{
+				name: 'CSS3',
+				icon: 'devicon-css3-plain',
+				level: '75',
+				animation: 'imghvr-zoom-out',
+				selected:false
+			},
+			{
+				name: 'Git',
+				icon: 'devicon-git-plain',
+				level: '75',
+				animation: 'imghvr-hinge-left',
+				selected:false
+			},
+			{
+				name: 'Webpack',
+				icon: 'devicon-webpack-plain',
+				level: '75',
+				animation: 'imghvr-reveal-right',
+				selected:false
+			},
+			{
+				name: 'HTML5',
+				icon: 'devicon-html5-plain',
+				level: '75',
+				animation: 'imghvr-push-up',
+				selected:false
+			},
+			{
+				name: 'GitLabCI',
+				icon: 'devicon-gitlab-plain',
+				level: '70',
+				animation: 'imghvr-flip-diag-1',
+				selected:false
+			},
+			{
+				name: 'JQuery',
+				icon: 'devicon-jquery-plain',
+				level: '70',
+				animation: 'imghvr-fold-down',
+				selected:false
+			},
+			{
+				name: 'TravisCI',
+				icon: 'devicon-travis-plain',
+				level: '70',
+				animation: 'imghvr-shutter-in-out-diag-1',
+				selected:false
+			},
+			{ name:
+				'NodeJS',
+				icon: 'devicon-nodejs-plain',
+				level: '70',
+				animation: 'imghvr-hinge-right',
+				selected:false
+			},
+			{
+				name: 'Jasmine',
+				icon: 'devicon-jasmine-plain',
+				level: '65',
+				animation: 'imghvr-slide-right',
+				selected:false
+			},
+			{
+				name: 'Mocha',
+				icon: 'devicon-mocha-plain',
+				level: '65',
+				animation: 'imghvr-zoom-in',
+				selected:false
+			},
+			{
+				name: 'C++',
+				icon: 'devicon-cplusplus-plain',
+				level: '60',
+				animation: 'imghvr-zoom-out-right',
+				selected:false
+			},
+			{
+				name: 'Docker',
+				icon: 'devicon-docker-plain',
+				level: '60',
+				animation: 'imghvr-push-down',
+				selected:false
+			},
+			{
+				name: 'Nginx',
+				icon: 'devicon-nginx-plain',
+				level: '55',
+				animation: 'imghvr-reveal-up',
+				selected:false
+			},
+			{
+				name: 'Redis',
+				icon: 'devicon-redis-plain',
+				level: '50',
+				animation: 'imghvr-flip-vert',
+				selected:false
+			},
+			{
+				name: 'Java',
+				icon: 'devicon-java-plain',
+				level: '50',
+				animation: 'imghvr-shutter-out-vert',
+				selected:false
+			},
+			{
+				name: 'Android',
+				icon: 'devicon-android-plain',
+				level: '40',
+				animation: 'imghvr-shutter-in-horiz',
+				selected:false
+			},
+			{
+				name: 'PostgreSQL',
+				icon: 'devicon-postgresql-plain',
+				level: '40',
+				animation: 'imghvr-flip-horiz',
+				selected:false
+			},
+			{
+				name: 'C',
+				icon: 'devicon-c-plain',
+				level: '40',
+				animation: 'imghvr-slide-up',
+				selected:false
+			},
 		]
 		this.tempState = {
 			config: {

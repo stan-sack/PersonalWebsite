@@ -1,5 +1,4 @@
 import React from 'react'
-// import { Card, CardTitle } from 'react-materialize'
 import s from './CopyrightSlide.css'
 
 const CopyrightSlide = () => (
@@ -19,4 +18,3 @@ const CopyrightSlide = () => (
 CopyrightSlide.propTypes = {}
 
 export default CopyrightSlide
-// <Card className={s.cardStyle}>

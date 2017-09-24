@@ -12,10 +12,6 @@ class Carousel extends Component {
 		this.setTimer = this.setTimer.bind(this)
 		this.clearTimer = this.clearTimer.bind(this)
 		this.events = {
-			onTouchStart: this.onDraggingStart.bind(this),
-			onTouchMove: this.onDraggingMove.bind(this),
-			onTouchEnd: this.onDraggingEnd.bind(this),
-			onTouchCancel: this.onDraggingEnd.bind(this),
 			onClick: this.onClick.bind(this),
 			onTransitionEnd: this.onTransitionEnd.bind(this)
 		}
@@ -52,34 +48,6 @@ class Carousel extends Component {
 		if (slide >= 0 && slide <= React.Children.count(this.props.children) + 1) {
 			this.setState({ slide, sliding: true, dragging: null }, this.setTimer)
 		}
-	}
-
-	onDraggingStart(event) {
-		if (event.touches) {
-			this.setState({
-				dragging: {
-					x: event.touches[0].pageX,
-					y: event.touches[0].pageY
-				},
-				offset: 0
-			})
-		}
-
-	}
-	onDraggingMove(event) {
-		const { sliding, dragging } = this.state
-		if (sliding || !dragging || !event.touches) return
-		const x = event.touches[0].pageX
-		const y = event.touches[0].pageY
-		const offset = x - dragging.x
-		if (Math.abs(y - dragging.y) < Math.abs(offset)) event.preventDefault()
-		this.setState({ offset })
-	}
-	onDraggingEnd(event) {
-		const { slide, offset, dragging } = this.state
-		if (!dragging) return
-		const target = Math.abs(offset) > this.slider.clientWidth / 5 ? (offset > 0 ? slide - 1 : slide + 1) : slide
-		this.setState({ dragging: null }, this.changeSlide.bind(this, target))
 	}
 	onClick(event) {
 		if (Math.abs(this.state.offset) < 25) return
@@ -130,12 +98,15 @@ class Carousel extends Component {
 					display: 'flex',
 					transitionProperty: sliding ? 'transform' : 'none',
 					justifyContent: 'center',
-					transform: enabled ? (dragging && offset !== 0 ? 'translateX(calc(' + (offset * 1) + 'px - ' + slide * 100 + '%))' : 'translateX(' + this.getOffset(slide, slides) * 100 + '%)') : null,
+					transform: enabled ? (dragging && offset !== 0
+						? 'translateX(calc(' + (offset * 1) + 'px - ' + slide * 100 + '%))'
+						: 'translateX(' + this.getOffset(slide, slides) * 100 + '%)') : null,
 					transitionDuration,
 					transitionTimingFunction
 				}} {...this.events}>
-					{enabled && Children.map(slides.slice(-1).concat(children, slides.slice(0, 1)),
-						(item, index) => <li aria-current={slide === index} style={slideStyle}>{item}</li>) || <li>{children}</li>
+					{(enabled && Children.map(slides.slice(-1).concat(children, slides.slice(0, 1)),
+						(item, index) => <li aria-current={slide === index} style={slideStyle}>{item}</li>)) ||
+						<li>{children}</li>
 				}
 				</ul>
 				{enabled && indicator && <ol>
@@ -167,7 +138,7 @@ class Carousel extends Component {
 								size='4x'
 								aria-hidden='true' />
 						</button>
-						<button className={s.largeButton} type='button' className={`${s.largeButtonRight} ${s.next}`} onClick={goNextSlide}>
+						<button type='button' className={`${s.largeButtonRight} ${s.next}`} onClick={goNextSlide}>
 							<FontAwesome
 								name='arrow-circle-o-right'
 								size='4x'

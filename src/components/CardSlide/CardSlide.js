@@ -3,6 +3,7 @@ import { Card, CardTitle } from 'react-materialize'
 import s from './CardSlide.css'
 import MediaQuery from 'react-responsive'
 import Carousel from '../Carousel'
+import ProgressiveImage from 'react-progressive-image'
 
 const generateCarousel = (cards) => {
 	return (
@@ -18,7 +19,13 @@ const generateCarousel = (cards) => {
 
 const cards = (
 	<div>
-		<Card className={s.cardStyle} header={<CardTitle reveal image={'img/dolbyvoice.jpg'} waves='light' />}
+		<Card
+			className={s.cardStyle}
+			header={
+				<ProgressiveImage src='img/dolbyvoice.jpg' placeholder='img/placeholder.png'>
+					{(src) => <CardTitle reveal image={src} waves='light' />}
+				</ProgressiveImage>
+			}
 			title={'Dolby Voice'}
 			reveal={
 				<div className={s.cardBodyText}>
@@ -36,7 +43,13 @@ const cards = (
 				</a>
 			</p>
 		</Card>
-		<Card className={s.cardStyle} header={<CardTitle reveal image={'img/oneroadmap.png'} waves='light' />}
+		<Card
+			className={s.cardStyle}
+			header={
+				<ProgressiveImage src='img/oneroadmap.png' placeholder='img/placeholder.png'>
+					{(src) => <CardTitle reveal image={src} waves='light' />}
+				</ProgressiveImage>
+			}
 			title={'One Road to London'}
 			reveal={
 				<div className={s.cardBodyText}>
@@ -56,7 +69,13 @@ const cards = (
 				</a>
 			</p>
 		</Card>
-		<Card className={s.cardStyle} header={<CardTitle reveal image={'img/pinacolada.png'} waves='light' />}
+		<Card
+			className={s.cardStyle}
+			header={
+				<ProgressiveImage src='img/pinacolada.png' placeholder='img/placeholder.png'>
+					{(src) => <CardTitle reveal image={src} waves='light' />}
+				</ProgressiveImage>
+			}
 			title={'Pina Colada'}
 			reveal={
 				<div className={s.cardBodyText}>
@@ -82,7 +101,13 @@ const cards = (
 				</a>
 			</p>
 		</Card>
-		<Card className={s.cardStyle} header={<CardTitle reveal image={'img/reactmediablog.png'} waves='light' />}
+		<Card
+			className={s.cardStyle}
+			header={
+				<ProgressiveImage src='img/reactmediablog.png' placeholder='img/placeholder.png'>
+					{(src) => <CardTitle reveal image={src} waves='light' />}
+				</ProgressiveImage>
+			}
 			title={'React Media Blog'}
 			reveal={
 				<div className={s.cardBodyText}>
@@ -122,7 +147,13 @@ const cards = (
 				</a>
 			</p>
 		</Card>
-		<Card className={s.cardStyle} header={<CardTitle reveal image={'img/itutorparents.png'} waves='light' />}
+		<Card
+			className={s.cardStyle}
+			header={
+				<ProgressiveImage src='img/itutorparents.png' placeholder='img/placeholder.png'>
+					{(src) => <CardTitle reveal image={src} waves='light' />}
+				</ProgressiveImage>
+			}
 			title={'iTutor Parents'}
 			reveal={
 				<div className={s.cardBodyText}>
@@ -145,7 +176,13 @@ const cards = (
 				</a>
 			</p>
 		</Card>
-		<Card className={s.cardStyle} header={<CardTitle reveal image={'img/blobgame.png'} waves='light' />}
+		<Card
+			className={s.cardStyle}
+			header={
+				<ProgressiveImage src='img/blobgame.png' placeholder='img/placeholder.png'>
+					{(src) => <CardTitle reveal image={src} waves='light' />}
+				</ProgressiveImage>
+			}
 			title={'BlobGame'}
 			reveal={
 				<div className={s.cardBodyText}>
@@ -167,7 +204,13 @@ const cards = (
 				</a>
 			</p>
 		</Card>
-		<Card className={s.cardStyle} header={<CardTitle reveal image={'img/pulaapply.png'} waves='light' />}
+		<Card
+			className={s.cardStyle}
+			header={
+				<ProgressiveImage src='img/pulaapply.png' placeholder='img/placeholder.png'>
+					{(src) => <CardTitle reveal image={src} waves='light' />}
+				</ProgressiveImage>
+			}
 			title={'Pula Apply'}
 			reveal={
 				<div className={s.cardBodyText}>{
@@ -183,7 +226,13 @@ const cards = (
 				</a>
 			</p>
 		</Card>
-		<Card className={s.cardStyle} header={<CardTitle reveal image={'img/itutorapply.png'} waves='light' />}
+		<Card
+			className={s.cardStyle}
+			header={
+				<ProgressiveImage src='img/itutorapply.png' placeholder='img/placeholder.png'>
+					{(src) => <CardTitle reveal image={src} waves='light' />}
+				</ProgressiveImage>
+			}
 			title={'iTutor Apply'}
 			reveal={
 				<div className={s.cardBodyText}>{
@@ -198,7 +247,13 @@ const cards = (
 				</a>
 			</p>
 		</Card>
-		<Card className={s.cardStyle} header={<CardTitle reveal image={'img/ausrt.png'} waves='light' />}
+		<Card
+			className={s.cardStyle}
+			header={
+				<ProgressiveImage src='img/ausrt.png' placeholder='img/placeholder.png'>
+					{(src) => <CardTitle reveal image={src} waves='light' />}
+				</ProgressiveImage>
+			}
 			title={'AUSRT'}
 			reveal={
 				<div className={s.cardBodyText}>{
@@ -213,7 +268,13 @@ const cards = (
 				</a>
 			</p>
 		</Card>
-		<Card className={s.cardStyle} header={<CardTitle reveal image={'img/itutorsuite.png'} waves='light' />}
+		<Card
+			className={s.cardStyle}
+			header={
+				<ProgressiveImage src='img/itutorsuite.png' placeholder='img/placeholder.png'>
+					{(src) => <CardTitle reveal image={src} waves='light' />}
+				</ProgressiveImage>
+			}
 			title={'iTutor Suite'}
 			reveal={
 				<div className={s.cardBodyText}>{'Contributed to maintance of Delphi software.'}</div>

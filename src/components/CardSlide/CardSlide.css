@@ -1,73 +1,73 @@
 @media screen and (orientation:portrait) {
-    .cardSlide {
-        display: flex;
-        margin: 5%;
-        height: 100%;
-        justify-content: center;
-        text-align: center;
-        flex-wrap: wrap;
-        align-items: center;
-        flex-direction: row;
-    }
+	.cardSlide {
+		display: flex;
+		margin: 5%;
+		height: 100%;
+		justify-content: center;
+		text-align: center;
+		flex-wrap: wrap;
+		align-items: center;
+		flex-direction: row;
+	}
 
-    .cardStyle {
-        width: 35vh;
-        height: 60vh;
-        margin: 5%;
-        text-align: left;
+	.cardStyle {
+		width: 35vh;
+		height: 60vh;
+		margin: 5%;
+		text-align: left;
 		position: relative;
 		left: -20vh;
-    }
+	}
 }
 
 @media screen and (orientation:landscape) and (min-width:1920px){
-    .cardSlide {
-        display: flex;
-        margin: 7%;
-        min-height: 100%;
-        justify-content: center;
-        text-align: center;
-        flex-wrap: wrap;
-        align-items: center;
-        flex-direction: row;
-    }
+	.cardSlide {
+		display: flex;
+		margin: 7%;
+		min-height: 100%;
+		justify-content: center;
+		text-align: center;
+		flex-wrap: wrap;
+		align-items: center;
+		flex-direction: row;
+	}
 
-    .cardStyle {
-        width: 30em;
-        height: 45em;
-        margin: 1%;
-        text-align: left;
-    }
+	.cardStyle {
+		width: 30em;
+		height: 45em;
+		margin: 1%;
+		text-align: left;
+	}
 }
 
 @media screen and (orientation:landscape) and (max-width:1920px){
-    .cardSlide {
-        display: flex;
-        margin: 5%;
-        min-height: 100%;
-        justify-content: center;
-        text-align: center;
-        flex-wrap: wrap;
-        align-items: center;
-        flex-direction: row;
-    }
+	.cardSlide {
+		display: flex;
+		margin: 5%;
+		min-height: 100%;
+		justify-content: center;
+		text-align: center;
+		flex-wrap: wrap;
+		align-items: center;
+		flex-direction: row;
+	}
 
-    .cardStyle {
-        width: 24em;
-        height: 36em;
-        text-align: left;
+	.cardStyle {
+		width: 24em;
+		height: 36em;
+		text-align: left;
 		position: relative;
 		left: -12em;
-    }
+	}
 }
 
 .cardBodyText {
-    text-align: justify;
-    padding-top: 30px;
+	text-align: left;
+	padding-top: 30px;
 }
 
 .cardLinkText {
-    color: #17B4D0;
+	color: #17B4D0;
 }
 
 .sliderStyle {

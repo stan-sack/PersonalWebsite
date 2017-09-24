@@ -27,16 +27,3 @@ export default class TextSlide extends React.Component {
 		)
 	}
 }
-// const TextSlide = ({ children }) => (
-//     <div className={s.textSlide}>
-//         <h3 className={s.quote}>
-//             {children}
-//         </h3>
-//     </div>
-// );
-//
-// TextSlide.propTypes = {
-//     children: PropTypes.string
-// };
-//
-// export default TextSlide;
