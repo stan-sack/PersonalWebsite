@@ -1,6 +1,8 @@
 import React from 'react'
 import s from './ResumeSlide.css'
-import PDF from 'react-pdf-js'
+import resumeImg from './cv_for_website.png'
+import placeholder from './placeholder.png'
+import ProgressiveImage from 'react-progressive-image'
 
 export default class ResumeSlide extends React.Component {
 	state = { scale: 3.2 }
@@ -24,11 +26,13 @@ export default class ResumeSlide extends React.Component {
 			<div className={s.resumeSlide}>
 				<div className={s.resumeSlideOuter}>
 					<div className={s.pdfInner}>
-						<PDF
-							scale={this.state.scale}
-							className={s.pdfContainer}
-							file='/assets/cv_for_website.pdf'
-							page={1} />
+						<ProgressiveImage src={resumeImg} placeholder={placeholder}>
+							{(src) => (
+								<img
+									className={s.pdfContainer}
+									src={src} />
+							)}
+						</ProgressiveImage>
 					</div>
 				</div>
 			</div>

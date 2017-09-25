@@ -8,7 +8,7 @@ const ImageSlide = ({ backgroundImage, children, placeholder }) => (
 		{(src) => (
 			<div
 				className={s.backgroundSlide}
-				style={{ backgroundImage: `url(${src})` }}>
+				style={{ backgroundImage: `url(${backgroundImage})` }}>
 				{children}
 			</div>
 		)}

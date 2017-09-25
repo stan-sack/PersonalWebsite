@@ -43,7 +43,7 @@ export default class Layout extends React.Component {
 				<ScrollableAnchor id={'portfolio'}>
 					<CardSlide />
 				</ScrollableAnchor>
-				<ImageSlide backgroundImage='/img/slide5.jpg' placeholder='/hires-img/slide5.jpg'>
+				<ImageSlide backgroundImage='/img/slide5.jpg' placeholder='/img/slide5.jpg'>
 					<h1>Skill Set</h1>
 				</ImageSlide>
 				<ScrollableAnchor id={'skillset'}>
