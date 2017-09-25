@@ -35,9 +35,14 @@
 		<script src="https://www.google-analytics.com/analytics.js" async defer></script>
 		<%_ } _%>
 		<script>
-		$('#mainBackgroundImage').load(function() {
+		var src = $('#mainBackgroundImage').css('background-image');
+		var url = src.match(/\((.*?)\)/)[1].replace(/('|")/g,'');
+		var img = new Image();
+		img.onload = function() {
 			$(".se-pre-con").fadeOut("slow");;
-		});
+		}
+		img.src = url;
+		if (img.complete) img.onload();
 		</script>
 	</body>
 	</html>
