@@ -201,7 +201,7 @@
 
 	.clearButton:hover{
 		cursor: pointer;
-		box-shadow: inset 100px 0px 0px 0px #444444;
+		box-shadow: inset 121px 0px 0px 0px #444444;
 		color:white;
 		border-color: #444444;
 	}
