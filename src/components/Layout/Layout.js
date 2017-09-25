@@ -29,7 +29,7 @@ export default class Layout extends React.Component {
 			<div ref={node => (this.root = node)} className={s.content}>
 				<Header />
 				<div id='top' />
-				<ImageSlide backgroundImage='/img/slide1.jpg'>
+				<ImageSlide backgroundImage='/img/slide1.jpg' id={'mainBackgroundImage'}>
 					<h1>STAN TSOUVALLAS</h1>
 					<h2>SOFTWARE ENGINEER</h2>
 					<MenuBar />
