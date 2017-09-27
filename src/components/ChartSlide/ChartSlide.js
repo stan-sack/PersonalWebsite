@@ -368,6 +368,7 @@ export default class ChartSlide extends React.Component {
 					{this.renderIconList(this.skillsList, s)}
 				</div>
 				<h4 className={s.chartLabel}>Choose your required skills</h4>
+				<div>
 				<Radar
 					data={this.state.config}
 					options={{
@@ -376,6 +377,7 @@ export default class ChartSlide extends React.Component {
 					}}
 					height={0.35 * window.innerHeight}
 					width={window.innerWidth} />
+			</div>
 				<h4><div onClick={this.clearData} className={s.clearButton}>Clear</div></h4>
 			</div>
 		)
