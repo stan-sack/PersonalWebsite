@@ -256,6 +256,8 @@ export default class ChartSlide extends React.Component {
 		this.originalState = deepcopy(this.tempState)
 		this.client = new ClientJS()
 		this.os = this.client.getOS().name
+		this.state.chartHeight = 0.35 * window.innerHeight
+		this.state.chartWidth = window.innerWidth
 	}
 
 	componentWillMount() {
@@ -372,14 +374,13 @@ export default class ChartSlide extends React.Component {
 				</div>
 				<h4 className={s.chartLabel}>Choose your required skills</h4>
 				<Radar
-					redraw={this.os === 'Android' || this.os === 'iOS'}
 					data={this.state.config}
 					options={{
 						...this.state.options,
 						maintainAspectRation: true
 					}}
-					height={0.35 * window.innerHeight}
-					width={window.innerWidth} />
+					height={this.state.chartHeight}
+					width={this.state.chartWidth} />
 				<h4><div onClick={this.clearData} className={s.clearButton}>Clear</div></h4>
 			</div>
 		)
