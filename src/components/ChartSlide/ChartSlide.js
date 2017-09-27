@@ -256,8 +256,15 @@ export default class ChartSlide extends React.Component {
 		this.originalState = deepcopy(this.tempState)
 		this.client = new ClientJS()
 		this.os = this.client.getOS().name
-		this.state.chartHeight = 0.35 * window.innerHeight
-		this.state.chartWidth = window.innerWidth
+		let w = window
+		let d = document
+		let e = d.documentElement
+		let g = d.getElementsByTagName('body')[0]
+		let x = w.innerWidth || e.clientWidth || g.clientWidth
+		let y = w.innerHeight || e.clientHeight || g.clientHeight
+
+		this.state.chartHeight = 0.35 * x
+		this.state.chartWidth = y
 	}
 
 	componentWillMount() {
