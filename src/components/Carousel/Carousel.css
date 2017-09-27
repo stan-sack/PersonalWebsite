@@ -48,8 +48,6 @@
 	position: absolute;
 	font-size: inherit;
 	background-color: white;
-	height: 2em;
-	width: 2em;
 	opacity: 0.5;
 	padding: 0;
 	border: 0;
@@ -77,11 +75,9 @@
 }
 
 .largeButtonLeft {
-	margin-left: 5% !important
-
+	margin-left: 5% !important;
 }
 
 .largeButtonRight {
-	margin-right: 5% !important
-
+	margin-right: 5% !important;
 }

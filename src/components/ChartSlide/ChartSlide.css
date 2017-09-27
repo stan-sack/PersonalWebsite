@@ -14,8 +14,7 @@
 		flex-wrap:wrap;
 	}
 	.languageIconFigure {
-		margin: 0.2%;
-		margin-bottom: 0.5%;
+		margin: 0.2em;
 	    width: 2.5em;
 	    height: 2.5em;
 		align-items: center;
@@ -94,7 +93,7 @@
 
 	.languageIconFigure {
 		margin: 0.2%;
-		margin-bottom: 0.5%;
+		margin-bottom: 0.2em;
 	    width: 5em;
 	    height: 5em;
 		align-items: center;
@@ -168,7 +167,7 @@
 	}
 	.languageIconFigure {
 		margin: 0.2%;
-		margin-bottom: 0.5%;
+		margin-bottom: 0.2em;
 	    width: 10em;
 	    height: 10em;
 		align-items: center;

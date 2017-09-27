@@ -250,11 +250,37 @@ export default class ChartSlide extends React.Component {
 				}
 			}
 		}
+
 		this.state = deepcopy(this.tempState)
 		this.originalState = deepcopy(this.tempState)
 	}
 
-	componentDidMount() {}
+	componentWillMount() {
+		let indexes = []
+		for (let i = 0; i < 17; i++) {
+			indexes.push(Math.floor(Math.random() * (this.skillsList.length - 1)))
+		}
+		indexes = Array.from(new Set(indexes))
+		for (let i in indexes) {
+			let index = indexes[i]
+			this.skillsList[index].selected = !this.skillsList[index].selected
+			let skill = this.skillsList[index]
+			this.tempState.config.labels.push(skill.name)
+			this.tempState.config.datasets = this.tempState.config.datasets.map((dataset) => {
+				dataset.data.push(skill.level)
+				return dataset
+			})
+		}
+
+		this.tempState.config.datasets = this.tempState.config.datasets.map((dataset) => {
+			dataset.data.splice(this.tempState.config.labels.indexOf(''), 1)
+			return dataset
+		})
+
+		this.tempState.config.labels.splice(this.tempState.config.labels.indexOf(''), 1)
+
+		this.setState(deepcopy(this.tempState))
+	}
 
 	clearData() {
 		delete this.tempState
@@ -343,7 +369,6 @@ export default class ChartSlide extends React.Component {
 				</div>
 				<h4 className={s.chartLabel}>Choose your required skills</h4>
 				<Radar
-					redraw
 					data={this.state.config}
 					options={{
 						...this.state.options,
