@@ -10,6 +10,7 @@
     "babel-polyfill": "^6.23.0",
     "chart.js": "^2.6.0",
     "classnames": "^2.2.5",
+    "clientjs": "^0.1.11",
     "create-react-class": "^15.6.0",
     "deepcopy": "^0.6.3",
     "eslint-config-standard": "^10.2.1",

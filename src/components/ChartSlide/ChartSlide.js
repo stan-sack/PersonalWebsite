@@ -2,6 +2,7 @@ import React from 'react'
 import { Radar } from 'react-chartjs-2'
 import deepcopy from 'deepcopy'
 import s from './ChartSlide.css'
+import ClientJS from 'clientjs'
 
 export default class ChartSlide extends React.Component {
 
@@ -253,6 +254,8 @@ export default class ChartSlide extends React.Component {
 
 		this.state = deepcopy(this.tempState)
 		this.originalState = deepcopy(this.tempState)
+		this.client = new ClientJS()
+		this.os = this.client.getOS().name
 	}
 
 	componentWillMount() {
@@ -369,6 +372,7 @@ export default class ChartSlide extends React.Component {
 				</div>
 				<h4 className={s.chartLabel}>Choose your required skills</h4>
 				<Radar
+					redraw={this.os === 'Android' || this.os === 'iOS'}
 					data={this.state.config}
 					options={{
 						...this.state.options,
