@@ -263,8 +263,9 @@ export default class ChartSlide extends React.Component {
 		let x = w.innerWidth || e.clientWidth || g.clientWidth
 		let y = w.innerHeight || e.clientHeight || g.clientHeight
 
-		this.state.chartHeight = 0.35 * x
-		this.state.chartWidth = y
+
+
+		this.state.chartWidth = 0.8 * Math.min(x, y)
 	}
 
 	componentWillMount() {
@@ -386,7 +387,6 @@ export default class ChartSlide extends React.Component {
 						...this.state.options,
 						maintainAspectRation: true
 					}}
-					height={this.state.chartHeight}
 					width={this.state.chartWidth} />
 				<h4><div onClick={this.clearData} className={s.clearButton}>Clear</div></h4>
 			</div>
