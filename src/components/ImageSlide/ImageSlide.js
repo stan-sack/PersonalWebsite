@@ -4,28 +4,49 @@ import s from './ImageSlide.css'
 import ProgressiveImage from 'react-progressive-image'
 import ClientJS from 'clientjs'
 
-const getClassName = () => {
-	let name = s.backgroundSlide
+const getComponent = (backgroundImage, children, placeholder, id ) => {
 	let client = new ClientJS()
 	let os = client.getOS().name
 	let browser = client.getBrowser().name
-	if (os === 'iOS' && browser === 'Safari') {
-		name = `${name} ${s.safari}`
+	if (os === 'iOS' || browser === 'Mobile Safari') {
+		return (
+			<ProgressiveImage src={backgroundImage} placeholder={placeholder} className={s.wrapper}>
+				{(src) => (
+					<div
+						id={id}
+						style={{
+							backgroundImage: `url(${backgroundImage})`,
+							backgroundAttachment: 'cover',
+							width: '100%',
+							height: '100%',
+							backgroundPosition: 'center center',
+							display: 'flex',
+							flexDirection: 'column',
+							justifyContent: 'center',
+							textAlign: 'center',
+							backgroundSize: 'cover'
+						}}>
+						{children}
+					</div>
+				)}
+			</ProgressiveImage>
+		)
 	}
-	return name
+	return (
+		<ProgressiveImage src={backgroundImage} placeholder={placeholder} className={s.wrapper}>
+			{(src) => (
+				<div
+					id={id}
+					className={s.backgroundSlide}
+					style={{ backgroundImage: `url(${backgroundImage})` }}>
+					{children}
+				</div>
+			)}
+		</ProgressiveImage>
+	)
 }
 const ImageSlide = ({ backgroundImage, children, placeholder, id }) => (
-	<ProgressiveImage src={backgroundImage} placeholder={placeholder}>
-		{(src) => (
-			<div
-				id={id}
-				className={getClassName()}
-				style={{ backgroundImage: `url(${backgroundImage})` }}>
-				{children}
-			</div>
-		)}
-	</ProgressiveImage>
-
+	getComponent(backgroundImage, children, placeholder, id )
 )
 
 ImageSlide.propTypes = {

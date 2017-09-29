@@ -5,16 +5,11 @@
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
-	background: no-repeat center center fixed;
+    background-attachment: fixed;
+    background-position: center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	overflow: hidden;
-}
-
-.safari {
-	height: 100%;
-	overflow: scroll;
-	-webkit-overflow-scrolling: touch;
 }
