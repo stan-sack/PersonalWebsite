@@ -4,7 +4,7 @@ import s from './ImageSlide.css'
 import ProgressiveImage from 'react-progressive-image'
 import ClientJS from 'clientjs'
 
-const getComponent = (backgroundImage, children, placeholder, id ) => {
+const getComponent = (backgroundImage, children, placeholder, id) => {
 	let client = new ClientJS()
 	let os = client.getOS().name
 	let browser = client.getBrowser().name
@@ -46,7 +46,7 @@ const getComponent = (backgroundImage, children, placeholder, id ) => {
 	)
 }
 const ImageSlide = ({ backgroundImage, children, placeholder, id }) => (
-	getComponent(backgroundImage, children, placeholder, id )
+	getComponent(backgroundImage, children, placeholder, id)
 )
 
 ImageSlide.propTypes = {
