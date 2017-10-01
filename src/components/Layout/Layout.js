@@ -31,7 +31,7 @@ export default class Layout extends React.Component {
 				<div id='top' />
 				<ImageSlide backgroundImage='/img/slide1.jpg' id={'mainBackgroundImage'}>
 					<h1>STAN TSOUVALLAS</h1>
-					<h2>SOFTWARE ENGINEER.</h2>
+					<h2>SOFTWARE ENGINEER</h2>
 					<MenuBar />
 				</ImageSlide>
 				<ScrollableAnchor id={'about'}>
