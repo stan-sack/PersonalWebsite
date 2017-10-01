@@ -1,4 +1,4 @@
-@media screen and (orientation:portrait), screen and (max-width:720px) {
+@media screen and (orientation:portrait) and (min-width:720px), screen and (max-width:720px) {
 	.iconContainer {
 		margin-bottom: 1.5%;
 		margin-top: 9%;
@@ -42,6 +42,83 @@
 	.clearButton{
 		cursor: pointer;
 		margin-top:60px;
+		margin-bottom: 100px;
+		text-align: center;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		color:#444444;
+		font-weight: bold;
+		font-family: 'Montserrat';
+		transition: all 0.5s ease 0s;
+		-webkit-transition: all 0.5s ease 0s;
+		display: inline-block;
+		border-style: solid;
+		border-width: 3px;
+		border-radius: 2px;
+
+		box-shadow: inset 0 0 0 0 #444444;
+	}
+
+	.clearButton:hover {
+		cursor: pointer;
+		box-shadow: inset 100px 0px 0px 0px #444444;
+		color:white;
+		border-color: #444444;
+	}
+
+	.skillLevel {
+		font-size: 1em;
+		line-height: 10%;
+	}
+
+}
+
+@media screen and (orientation:portrait) and (max-width:720px) {
+	.iconContainer {
+		margin-bottom: 1.5%;
+		margin-top: 9%;
+
+		padding-left: 5%;
+		padding-right: 5%;
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		flex-direction: row;
+		flex-wrap:wrap;
+	}
+	.languageIconFigure {
+		margin: 0.2em;
+	    width: 2.5em;
+	    height: 2.5em;
+		align-items: center;
+	  	justify-content: center;
+		display: flex;
+	}
+
+	.languageIcon {
+		font-size: 2em;
+	}
+
+	h4 {
+		font-size: 1em;
+	}
+
+	h3 {
+		font-size: 2em;
+		padding: 0 !important;
+	}
+
+	figcaption {
+		padding: 0 !important;
+	}
+
+	.clearButton{
+		cursor: pointer;
+		margin-top:3px;
 		margin-bottom: 100px;
 		text-align: center;
 		padding-left: 15px;
@@ -181,7 +258,7 @@
 
 	.clearButton{
 		cursor: pointer;
-		margin-top:20px;
+		margin-top:100px;
 		margin-bottom: 100px;
 		text-align: center;
 		padding: 15px;

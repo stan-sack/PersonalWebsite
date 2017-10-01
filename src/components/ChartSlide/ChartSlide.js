@@ -263,8 +263,6 @@ export default class ChartSlide extends React.Component {
 		let x = w.innerWidth || e.clientWidth || g.clientWidth
 		let y = w.innerHeight || e.clientHeight || g.clientHeight
 
-
-
 		this.state.chartWidth = 0.8 * Math.min(x, y)
 	}
 

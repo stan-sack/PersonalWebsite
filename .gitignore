@@ -6,9 +6,10 @@ public/dist
 public/index.html
 public/sitemap.xml
 
-# Node.js and NPM
+# Node.js, NPM and yarn
 node_modules
 npm-debug.log
+yarn.lock
 
 # Firebase
 firebase-debug.log

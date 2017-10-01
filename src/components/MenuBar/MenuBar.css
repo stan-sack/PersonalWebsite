@@ -1,4 +1,4 @@
-@media screen and (orientation:portrait) {
+@media screen and (orientation:portrait) and (min-width:720px){
     .menuBarContainer{
         margin-top: 3vh;
         margin-bottom: 6vh;
@@ -16,6 +16,64 @@
         padding-left: 0;
         list-style-type: none;
         width: 25%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .menuBar li{
+        text-align:center;
+        float:left;
+        font-weight: bold;
+        transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+    }
+
+    .menuBar a{
+        padding:0 20px;
+        text-decoration-style: none;
+        padding-top: 12px;
+        padding-bottom: 11px;
+    }
+
+    .menuBar li a {
+        color: #0066cc;
+        opacity:1;
+        font-size: 12px;
+        text-decoration: none;
+        font-family: 'Montserrat',
+        sans-serif;
+        font-weight: bold;
+        transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        display: block;
+    }
+
+    .menuBar li a:hover {
+        color: #0066cc;
+        opacity:1;
+        background: white;
+        font-weight: bold;
+    }
+}
+
+@media screen and (orientation:portrait) and (max-width:720px){
+    .menuBarContainer{
+        margin-top: 3vh;
+        margin-bottom: 6vh;
+        text-align: center;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+
+    .menuBar{
+        border:1px solid #ccc;
+        border-width:1px 0;
+        display:flex;
+        flex-flow: column;
+        padding-left: 0;
+        list-style-type: none;
+        width: 35%;
         text-align: center;
         justify-content: center;
     }

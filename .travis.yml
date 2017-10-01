@@ -3,6 +3,10 @@ language: node_js
 node_js:
   - "6"
 
+install:
+  # `awscli` is required for invalidation of CloudFront distributions.
+  - pip install awscli --user
+
 cache:
   directories:
     - node_modules
@@ -16,8 +20,14 @@ deploy:
     branch: production
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
-  secret_access_key: $AWS_ACCESS_KEY_SECRET
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
   region: $AWS_DEFAULT_REGION
   bucket: "stantsouvallas.com"
   local_dir: public
   skip_cleanup: true
+
+after_deploy:
+  # Allow `awscli` to use preview CloudFront commands
+  - aws configure set preview.cloudfront true
+  # Invalidate everything
+  - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
