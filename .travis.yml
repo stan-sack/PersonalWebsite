@@ -5,7 +5,7 @@ node_js:
 
 install:
   # `awscli` is required for invalidation of CloudFront distributions.
-  - pip install awscli
+  - pip install awscli --user
 
 cache:
   directories:
